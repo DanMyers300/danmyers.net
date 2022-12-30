@@ -177,9 +177,9 @@ function App() {
         </ul>
 
         <div className='flex text-xl text-white gap-4 mt-2 md:justify-center'>
-          <AiFillLinkedin /> 
-          <AiFillGithub />
-          <AiFillInstagram />
+          <a href="www.linkedin.com/in/danpmyers"><AiFillLinkedin /></a> 
+          <a href="https://github.com/Colloke/danmyers.net"><AiFillGithub /></a>
+          <a href="https://www.instagram.com/dangandolf/"><AiFillInstagram /></a>
         </div>
 
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
