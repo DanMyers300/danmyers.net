@@ -1,6 +1,6 @@
 {
-  "short_name": "Danmyers.net",
-  "name": "Dan's Website",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
