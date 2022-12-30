@@ -94,17 +94,17 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href=""
+                href="https://www.linkedin.com/in/danpmyers"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} /> LinkedIn
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
-                href=""
+                href="https://github.com/Colloke/danmyers.net"
                 target="_blank"
                 className="fork-btn-inner"
               >
