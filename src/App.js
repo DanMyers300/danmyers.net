@@ -83,8 +83,8 @@ function App() {
             <img src='https://source.unsplash.com/random' layout="fill" objectFit="cover"/>
           </div>
           <div className='p-4'>
-            <h1 className='text-xl font-medium'>Dasar Pemrograman Javascript</h1>
-            <p className=''>Dicoding Indonesia</p>
+            <h1 className='text-xl font-medium'>CompTIA</h1>
+            <p className=''>A+</p>
             <p className='text-sm text-gray-500'>May 2023</p>
           </div>
         </div>
@@ -94,8 +94,8 @@ function App() {
             <img src='https://source.unsplash.com/random' layout="fill" objectFit="cover"/>
           </div>
           <div className='p-4'>
-            <h1 className='text-xl font-medium'>Dasar Pemrograman Javascript</h1>
-            <p className=''>Dicoding Indonesia</p>
+            <h1 className='text-xl font-medium'>CompTIA</h1>
+            <p className=''>Network+</p>
             <p className='text-sm text-gray-500'>May 2023</p>
           </div>
         </div>
@@ -105,8 +105,8 @@ function App() {
             <img src='https://source.unsplash.com/random' layout="fill" objectFit="cover"/>
           </div>
           <div className='p-4'>
-            <h1 className='text-xl font-medium'>Dasar Pemrograman Javascript</h1>
-            <p className=''>Dicoding Indonesia</p>
+            <h1 className='text-xl font-medium'>Google Suite</h1>
+            <p className=''>Certification</p>
             <p className='text-sm text-gray-500'>May 2023</p>
           </div>
         </div>
@@ -186,7 +186,7 @@ function App() {
 
         <p className="text-center text-sm text-gray-300 sm:text-center">
           © 2023
-          <a href="https://dendi.ninja"> Daniel Myers </a>. All Rights Reserved.
+          <a href="https://github.com/Colloke/danmyers.net"> Daniel Myers </a>. All Rights Reserved.
         </p>
 
       </div>
