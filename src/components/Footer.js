@@ -38,7 +38,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                {/*<AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
@@ -46,7 +46,7 @@ function Footer() {
                 href="https://www.linkedin.com/in/danpmyers"
                 style={{ color: "white" }}
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="noopener noreferrer"*/}
               >
                 <FaLinkedinIn />
               </a>
