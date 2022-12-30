@@ -6,7 +6,7 @@ import {AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillEnviron
 function App() {
   return (
     <main className='px-8 md:px-20 lg:px-40'>
-    <title>Daniel Myers</title>
+    
     <Navbar />
 
     <section id='home' className='min-h-screen text-center mt-4 flex flex-col justify-center '>
