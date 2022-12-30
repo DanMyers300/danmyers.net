@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Daniel-Myers-Resume.pdf";
+import pdf from "../../Assets/Daniel-Myers-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://github.com/Colloke/danmyers.net/blob/eb5af28c2575017d40c5ece58605494ca9c5aa53/src/Assets/Daniel-Myers-Resume.pdf";
+  "https://github.com/Colloke/danmyers.net/blob/b166524d2eeaa8231f8bb4d170c0c8b36b48cd07/src/Assets/Daniel-Myers-Resume.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
