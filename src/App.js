@@ -159,7 +159,7 @@ function App() {
     <section id="footer" className='mt-5 rounded bg-black py-8 px-8'>
       <div className='text-white md:text-center'>
         <h1 className='font-medium text-lg'>Contact Me</h1>
-        <p>Wanna talk anything?</p>
+        <p>-------------</p>
 
         <ul className='md:flex justify-center gap-4'>
           <li className='flex items-center gap-2'>
