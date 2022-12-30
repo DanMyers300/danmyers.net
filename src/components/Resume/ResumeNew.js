@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/Colloke/portfolio/dev/src/Assets/Daniel-Myers-Resume.pdf";
+  "https://github.com/Colloke/danmyers.net/blob/eb5af28c2575017d40c5ece58605494ca9c5aa53/src/Assets/Daniel-Myers-Resume.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
