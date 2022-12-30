@@ -18,7 +18,7 @@ function App() {
         <p className='text-md py-1 text-gray-800 md:text-xl'>Enthusiastic and motivated self-learning about information technology. Focused on cloud computing, devsecops, and web development. Now I am looking for more experience in my field. </p>
         <div className='text-5xl py-4 flex justify-center gap-16 text-gray-600'>
           <AiFillLinkedin /> 
-          <AiFillGithub />
+          <a href="https://github.com/Colloke/danmyers.net"><AiFillGithub /></a>
           <AiFillInstagram />
         </div>
     </section>
