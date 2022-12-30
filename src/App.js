@@ -2,6 +2,23 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './Navbar'
 import {AiFillLinkedin, AiFillGithub, AiFillInstagram, AiFillMail, AiFillEnvironment, AiFillPhone} from 'react-icons/ai'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'My Page Title';
+
+class MyComponent extends React.PureComponent {
+  render () {
+    return (
+      <>
+        <Helmet>
+          <title>{ TITLE }</title>
+        </Helmet>
+        ...
+      </>
+    )
+  }
+}
 
 function App() {
   return (
