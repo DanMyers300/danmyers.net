@@ -37,8 +37,8 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
-              >
-                {/*<AiOutlineTwitter />
+              {/*>
+                <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
