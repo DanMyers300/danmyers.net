@@ -17,9 +17,9 @@ function App() {
         <h3 className='text-xl md:text-2xl'>Cloud & Software Engineer</h3>
         <p className='text-md py-1 text-gray-800 md:text-xl'>Enthusiastic and motivated self-learning about information technology. Focused on cloud computing, devsecops, and web development. Now I am looking for more experience in my field. </p>
         <div className='text-5xl py-4 flex justify-center gap-16 text-gray-600'>
-          <AiFillLinkedin /> 
+          <a href="www.linkedin.com/in/danpmyers"><AiFillLinkedin /></a> 
           <a href="https://github.com/Colloke/danmyers.net"><AiFillGithub /></a>
-          <AiFillInstagram />
+          <a href="https://www.instagram.com/dangandolf/"><AiFillInstagram /></a>
         </div>
     </section>
 
