@@ -168,7 +168,7 @@ function App() {
           </li>
           <li className='flex items-center gap-2'>
             <AiFillEnvironment />
-            <p>Kab. Tegal</p>
+            <p>Dallas, TX</p>
           </li>
           <li className='flex items-center gap-2'>
             <AiFillPhone/>
