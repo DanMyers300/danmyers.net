@@ -164,7 +164,7 @@ function App() {
         <ul className='md:flex justify-center gap-4'>
           <li className='flex items-center gap-2'>
             <AiFillMail />
-            <p>damasukmath@gmail.com</p>
+            <p>contact@danmyers.net</p>
           </li>
           <li className='flex items-center gap-2'>
             <AiFillEnvironment />
@@ -172,7 +172,7 @@ function App() {
           </li>
           <li className='flex items-center gap-2'>
             <AiFillPhone/>
-            <p>0858-0058-9558</p>
+            <p>(469) 847-9401 </p>
           </li>
         </ul>
 
@@ -185,8 +185,8 @@ function App() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
 
         <p className="text-center text-sm text-gray-300 sm:text-center">
-          © 2022
-          <a href="https://dendi.ninja"> Damasukma Trihanandi</a>. All Rights Reserved.
+          © 2023
+          <a href="https://dendi.ninja"> Daniel Myers </a>. All Rights Reserved.
         </p>
 
       </div>
