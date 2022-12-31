@@ -102,11 +102,11 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
+            <Nav.Item className="email-btn">
               <Button
                 href="mailto:contact@danmyers.net"
                 target="_blank"
-                className="fork-btn-inner"
+                className="email-btn-inner"
               >
                 <CgMail style={{ fontSize: "1.2em" }} />{" "}
                 {/*<AiFillStar style={{ fontSize: "1.1em" }} />*/}
