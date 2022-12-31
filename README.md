@@ -85,7 +85,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div align="center">
-  [![Product Name Screen Shot][product-screenshot]](https://raw.githubusercontent.com/Colloke/danmyers.net/main/src/Assets/Website_Screenshot.png)
+[![Product Name Screen Shot][product-screenshot]](https://raw.githubusercontent.com/Colloke/danmyers.net/main/src/Assets/Website_Screenshot.png)
   <a href="https://github.com/Colloke/danmyers.net/main/src/Assets">
 	<img src="https://raw.githubusercontent.com/Colloke/danmyers.net/main/src/Assets/Website_Screenshot.png" alt="Screenshot">
   </a>
