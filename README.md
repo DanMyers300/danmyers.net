@@ -44,7 +44,7 @@
 	<a href="https://github.com/Colloke/danmyers.net"><strong>Explore the docs »</strong></a>
 	<br />
 	<br />
-	<a href="https://github.com/Colloke/danmyers.net">View Demo</a>
+	<a href="https://dev.d2mpkt15opqjq1.amplifyapp.com">View Dev Build</a>
 	·
 	<a href="https://github.com/Colloke/danmyers.net/issues">Report Bug</a>
 	·
