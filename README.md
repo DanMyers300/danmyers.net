@@ -84,13 +84,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Product Name Screen Shot][product-screenshot]](https://raw.githubusercontent.com/Colloke/danmyers.net/main/src/Assets/Website_Screenshot.png)
-
 <div align="center">
+  [![Product Name Screen Shot][product-screenshot]](https://raw.githubusercontent.com/Colloke/danmyers.net/main/src/Assets/Website_Screenshot.png)
   <a href="https://github.com/Colloke/danmyers.net/main/src/Assets">
 	<img src="https://raw.githubusercontent.com/Colloke/danmyers.net/main/src/Assets/Website_Screenshot.png" alt="Screenshot">
   </a>
-
+</div>
 <!--Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Colloke`, `danmyers.net`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
