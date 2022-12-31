@@ -18,10 +18,9 @@ function Home2() {
               <span className="purple"> INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Hmm placeholder text maybe 
               <br />
-              <br />I am fluent in classics like
+              <br />I am fluent in scripting languages like
               <i>
                 <b className="purple"> Javascript and Python. </b>
               </i>
