@@ -203,9 +203,8 @@ No License
 - Daniel Myers
 - contact@danmyers.net
 - +1 (469) 847-9401
-- Website: (https://www.danmyers.net)
 
-Project Link: [github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmyers.net)
+Website Link: [danmyers.net](https://www.Danmyers.net)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
