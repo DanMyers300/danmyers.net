@@ -18,35 +18,35 @@ function Home2() {
               <span className="purple"> INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-              Hmm placeholder text maybe
+            I am a young full-stack cloud engineer and web developer. I have a strong passion for technology and have been working in the tech industry for a few years now.
               <br />
-              <br />I am fluent in scripting languages like
+              <br />I am skilled in a variety of programming languages including:
               <i>
                 <b className="purple"> Javascript and Python. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              I am also well-versed in cloud computing platforms such as &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">AWS and Azure</b> and
+                I have experience with both{" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                infrastructure as a service (IaaS) and platform as a service (PaaS).
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              am a strong problem-solver and have  
+              excellent <b className="purple">communication</b> and
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  collaboration skills.
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js</b>
+                <b className="purple"> Team Management</b>
               </i>
             </p>
           </Col>
