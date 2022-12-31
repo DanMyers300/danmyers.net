@@ -30,7 +30,7 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
             "The only way to do great work is to be passionate about what you do. <span className="purple">Don't settle for mediocrity – always strive for excellence." </span> {" "}
           </p>
-          <footer className="blockquote-footer">Daniel</footer>
+          <footer className="blockquote-footer">Dan</footer>
         </blockquote>
       </Card.Body>
     </Card>
