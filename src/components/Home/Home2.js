@@ -37,7 +37,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              am a strong problem-solver and have  
+              I am a strong problem-solver and have  
               excellent <b className="purple">communication</b> and
               <i>
                 <b className="purple">
