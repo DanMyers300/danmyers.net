@@ -33,7 +33,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Colloke/danmyers.net/main/src/Assets">
-	<img src="/main/src/Assets/logo.png" alt="Logo" width="80" height="80">
+	<img src="danmyers.net/main/src/Assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">DanMyers.net</h3>
