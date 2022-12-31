@@ -15,18 +15,18 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          <strong className="purple">Projects</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          ----------------------------------
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Placeholder"
-              description="Placeholder"
+              title="Waterloo-Greenway chatbot"
+              description="Informational chatbot for Waterloo-greenway conservatory in Austin, TX. Used AWS lambda and lex to make the chatbot and AWS pinpoint to host the number"
               ghLink="https://github.com/Colloke/danmyers.net"
               demoLink=""
             />
