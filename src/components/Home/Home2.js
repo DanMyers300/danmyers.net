@@ -26,9 +26,9 @@ function Home2() {
               </i>
               <br />
               <br />
-              I am also well-versed in cloud computing platforms such as &nbsp;
+              I am also well-versed in cloud computing platforms such as&nbsp;
               <i>
-                <b className="purple">AWS and Azure</b> </i> and
+                <b className="purple">AWS and Google Cloud</b> </i> and
                 I have experience with both{" "}
                 <i>
                 <b className="purple">
