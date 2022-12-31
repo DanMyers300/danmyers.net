@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             <span className="purple">Daniel Myers </span>
             from <span className="purple"> Austin, Texas.</span>
-            <br /> I like coding
+            <br />
             <br />
             <br />
             Some other activities that I love to do!
