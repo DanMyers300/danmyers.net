@@ -38,16 +38,16 @@ function Home2() {
               <br />
               <br />
               I am a strong problem-solver and have  
-              excellent <b className="purple">communication</b> and
+              excellent <b className="purple">Team Management</b> and
               <i>
                 <b className="purple">
                   {" "}
-                  collaboration skills.
+                  collaboration skills
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> Team Management</b>
+                <b className="purple">Communication</b>
               </i>
             </p>
           </Col>
