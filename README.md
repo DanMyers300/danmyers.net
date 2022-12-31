@@ -183,21 +183,22 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
+<!-- LICENSE 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+No License
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>-->
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-- Daniel Myers - 
-- contact@danmyers.net -
-- Website: (https://www.danmyers.net) -
+- Daniel Myers
+- contact@danmyers.net
+- +1 (469) 847-9401
+- Website: (https://www.danmyers.net)
 
 Project Link: [github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmyers.net)
 
