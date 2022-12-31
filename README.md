@@ -195,7 +195,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Daniel Myers - [Website(https://www.danmyers.net) - contact@danmyers.net
+- Daniel Myers - 
+- contact@danmyers.net -
+- Website: (https://www.danmyers.net) -
 
 Project Link: [github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmyers.net)
 
