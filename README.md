@@ -195,9 +195,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - contact@danmyers.net
+Daniel Myers - [Website(https://www.danmyers.net) - contact@danmyers.net
 
-Project Link: [https://github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmyers.net)
+Project Link: [github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmyers.net)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
