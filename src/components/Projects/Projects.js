@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import WaterlooGreenway from "../../Assets/Projects/Waterloo-Greenway-Conservancy.jpg";
+import chatify from "../../Assets/Projects/Waterloo-Greenway-Conservancy.jpg";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
@@ -29,8 +29,8 @@ function Projects() {
               imgPath={WaterlooGreenway}
               isBlog={false}
               title="Waterloo-Greenway SMS Chatbot"
-              description="Informational chatbot for Waterloo-greenway conservatory in Austin, TX.           Used AWS Lambda and Lex to make a coversational chatbot."
-              ghLink="https://github.com/Colloke/WaterlooGreenwayChatbot"
+              description="Informational chatbot for Waterloo-greenway conservatory in Austin, TX. Used AWS Lambda and Lex to make a coversational chatbot."
+              ghLink="https://github.com/Colloke/danmyers.net/WaterlooGreenwayChatbot"
               demoLink=""
             />
           </Col>
