@@ -27,7 +27,7 @@ function Projects() {
               isBlog={false}
               title="Waterloo-Greenway SMS Chatbot"
               description="Informational chatbot for Waterloo-greenway conservatory in Austin, TX.           Used AWS Lambda and Lex to make a coversational chatbot."
-              ghLink="https://github.com/Colloke/danmyers.net/WaterlooGreenwayChatbot"
+              ghLink="https://github.com/Colloke/WaterlooGreenwayChatbot"
               demoLink=""
             />
           </Col>
