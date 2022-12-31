@@ -25,7 +25,7 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Waterloo-Greenway chatbot"
+              title="Waterloo-Greenway SMS Chatbot"
               description="Informational chatbot for Waterloo-greenway conservatory in Austin, TX. Used AWS lambda and lex to make the chatbot and AWS pinpoint to host the number"
               ghLink="https://github.com/Colloke/danmyers.net"
               demoLink=""
