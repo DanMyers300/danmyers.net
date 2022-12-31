@@ -9,6 +9,9 @@ import WaterlooGreenway from "../../Assets/Projects/Waterloo-Greenway-Conservanc
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
+const danghlink =
+  "https://raw.githubusercontent.com/Colloke";
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -38,7 +41,7 @@ function Projects() {
               isBlog={false}
               title="Placeholder"
               description="Placeholder"
-              ghLink="https://github.com/Colloke/danmyers.net"
+              ghLink={danghlink}
               demoLink=""
             />
           </Col>
@@ -49,7 +52,7 @@ function Projects() {
               isBlog={false}
               title="Placeholder"
               description="Placeholder"
-              ghLink="https://github.com/Colloke/danmyers.net"
+              ghLink={danghlink}
               demoLink=""             
             />
           </Col>
@@ -60,7 +63,7 @@ function Projects() {
               isBlog={false}
               title="Placeholder"
               description="Placeholder"
-              ghLink="https://github.com/Colloke/danmyers.net"
+              ghLink={danghlink}
               demoLink=""
             />
           </Col>
@@ -71,7 +74,7 @@ function Projects() {
               isBlog={false}
               title="Placeholder"
               description="Placeholder"
-              ghLink="https://github.com/Colloke/danmyers.net"
+              ghLink={danghlink}
               demoLink=""
             />
           </Col>
@@ -82,7 +85,7 @@ function Projects() {
               isBlog={false}
               title="Placeholder"
               description="Placeholder"
-              ghLink="https://github.com/Colloke/danmyers.net"
+              ghLink={danghlink}
               demoLink=""
             />
           </Col>
