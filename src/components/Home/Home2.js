@@ -28,8 +28,9 @@ function Home2() {
               <br />
               I am also well-versed in cloud computing platforms such as &nbsp;
               <i>
-                <b className="purple">AWS and Azure</b> and
+                <b className="purple">AWS and Azure</b> </i> and
                 I have experience with both{" "}
+                <i>
                 <b className="purple">
                 infrastructure as a service (IaaS) and platform as a service (PaaS).
                 </b>
