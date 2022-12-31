@@ -32,8 +32,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Colloke/danmyers.net">
-	<img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Colloke/danmyers.net/blob/main/src/Assets/logo.png">
+	<img src="./logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">DanMyers.net</h3>
