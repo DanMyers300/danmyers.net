@@ -18,7 +18,7 @@ function Home2() {
               <span className="purple"> INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-              Hmm placeholder text maybe 
+              Hmm placeholder text maybe
               <br />
               <br />I am fluent in scripting languages like
               <i>
