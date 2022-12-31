@@ -32,7 +32,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Colloke/danmyers.net/blob/main/src/Assets/">
+  <a href="https://raw.githubusercontent.com/Colloke/danmyers.net/main/src/Assets/logo.png">
 	<img src="./logo.png" alt="Logo" width="80" height="80">
   </a>
 
