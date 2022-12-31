@@ -39,7 +39,7 @@
 <h3 align="center">DanMyers.net</h3>
 
   <p align="center">
-	project_description
+	A personal portfolio website build using JSReact and AWS Amplify
 	<br />
 	<a href="https://github.com/Colloke/danmyers.net"><strong>Explore the docs »</strong></a>
 	<br />
