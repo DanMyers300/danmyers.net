@@ -8,6 +8,15 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
+const instalink =
+  "https://www.instagram.com/dangandolf"
+
+const linkedinlink =
+  "www.linkedin.com/in/danpmyers"
+
+const ghlink =
+  "https://github.com/Colloke/danmyers.net"
+
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -61,12 +70,12 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>--------------------------------------</h1>
             <p>
-              <span className="purple">Connect </span>with me
+              <span className="purple">Social</span>Links
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Colloke/danmyers.net"
+                  href={ghlink}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -76,7 +85,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href=""
+                  href={linkedinlink}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -86,7 +95,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/dangandolf"
+                  href={instalink}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
