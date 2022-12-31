@@ -109,7 +109,7 @@ function NavBar() {
                 className="fork-btn-inner"
               >
                 <CgMail style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                {/*<AiFillStar style={{ fontSize: "1.1em" }} />*/}
               </Button>
             </Nav.Item>
           </Nav>
