@@ -10,7 +10,7 @@ import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 const danghlink =
-  "https://raw.githubusercontent.com/Colloke";
+  "https://github.com/Colloke";
 
 function Projects() {
   return (
