@@ -232,7 +232,7 @@ Project Link: [github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmy
 [license-shield]: https://img.shields.io/github/license/Colloke/danmyers.net.svg?style=for-the-badge
 [license-url]: https://github.com/Colloke/danmyers.net/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/danpmyers
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
