@@ -208,7 +208,7 @@ Project Link: [github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmy
 
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS 
 ## Acknowledgments
 
 * []()
@@ -216,7 +216,7 @@ Project Link: [github.com/Colloke/danmyers.net](https://github.com/Colloke/Danmy
 * []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
