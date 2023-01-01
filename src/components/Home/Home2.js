@@ -56,7 +56,7 @@ function Home2() {
               </i>
               &nbsp; like 
               <i>
-                <b className="purple">communication</b>
+                <b className="purple"> communication</b>
               </i>
             </p>
           </Col>
