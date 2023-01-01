@@ -16,6 +16,9 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
+const linkTree =
+  "https://linktr.ee/danpmyers"
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -38,7 +41,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand href={linkTree} className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
