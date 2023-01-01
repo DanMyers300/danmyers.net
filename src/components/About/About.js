@@ -41,7 +41,7 @@ function About() {
         <Techstack />
 
         <h1 className="project-heading">
-          Professional <strong className="purple">Tools</strong>
+          <strong className="purple">Toolbox</strong>
         </h1>
         <Toolstack />
 
