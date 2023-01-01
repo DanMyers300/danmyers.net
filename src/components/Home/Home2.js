@@ -27,7 +27,7 @@ function Home2() {
               <span className="purple"> INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-            I am a young full-stack cloud engineer and web developer. I have a strong passion for technology and have been working in the tech industry for a few years now.
+            I am a young cloud engineer and full-stack web developer. I have a strong passion for technology.
               <br />
               <br />I am skilled in a variety of programming languages including:
               <i>
@@ -37,11 +37,11 @@ function Home2() {
               <br />
               I am also well-versed in cloud computing platforms such as&nbsp;
               <i>
-                <b className="purple">AWS and Google Cloud</b> </i> and
+                <b className="purple">AWS and Google Cloud</b> </i>
                 I have experience with both{" "}
                 <i>
                 <b className="purple">
-                infrastructure as a service (IaaS) and platform as a service (PaaS).
+                Business Management and Information Technology
                 </b>
               </i>
               <br />
