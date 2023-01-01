@@ -12,7 +12,7 @@ const instalink =
   "https://www.instagram.com/dangandolf"
 
 const linkedinlink =
-  "www.linkedin.com/in/danpmyers"
+  "https://www.linkedin.com/in/danpmyers"
 
 const ghlink =
   "https://github.com/Colloke"
