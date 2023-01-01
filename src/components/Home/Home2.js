@@ -15,7 +15,7 @@ const linkedinlink =
   "www.linkedin.com/in/danpmyers"
 
 const ghlink =
-  "https://github.com/Colloke/danmyers.net"
+  "https://github.com/Colloke"
 
 function Home2() {
   return (

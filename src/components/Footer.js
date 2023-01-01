@@ -6,6 +6,15 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
+const instalink =
+  "https://www.instagram.com/dangandolf"
+
+const linkedinlink =
+  "www.linkedin.com/in/danpmyers"
+
+const ghlink =
+  "https://github.com/Colloke/danmyers.net"
+
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
@@ -22,7 +31,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/Colloke/danmyers.net"
+                href={ghlink}
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -32,7 +41,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href=""
+                href={linkedinlink}
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -42,7 +51,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.instagram.com/dangandolf"
+                href={instalink}
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
