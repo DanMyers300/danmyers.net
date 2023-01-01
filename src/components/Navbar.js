@@ -104,7 +104,7 @@ function NavBar() {
 
             <Nav.Item className="email-btn">
               <Button
-                href="mailto:contact@danmyers.net"
+                href="mailto:contact+mailbutton@danmyers.net"
                 target="_blank"
                 className="email-btn-inner"
               >
