@@ -47,7 +47,7 @@ function Home2() {
               <br />
               <br />
               I am a strong problem-solver and have  
-              excellent <b className="purple">Team Management</b> and
+              excellent <b className="purple">productivity</b> and
               <i>
                 <b className="purple">
                   {" "}
@@ -56,7 +56,7 @@ function Home2() {
               </i>
               &nbsp; like 
               <i>
-                <b className="purple">Communication</b>
+                <b className="purple">communication</b>
               </i>
             </p>
           </Col>
