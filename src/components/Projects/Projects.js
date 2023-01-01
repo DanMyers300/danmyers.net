@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import HEB from "../../Assets/Projects/HEB.png";
 import WaterlooGreenway from "../../Assets/Projects/Waterloo-Greenway-Conservancy.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import Emler from "../../Assets/Projects/Emler.png";
@@ -51,10 +51,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={HEB}
               isBlog={false}
-              title="Placeholder"
-              description="Placeholder"
+              title="H-E-B"
+              description="Grocery Operative"
               ghLink={danghlink}
               demoLink=""             
             />
