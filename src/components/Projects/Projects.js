@@ -7,7 +7,7 @@ import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import WaterlooGreenway from "../../Assets/Projects/Waterloo-Greenway-Conservancy.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Emler from "../../Assets/Projects/Emler.png";
 
 const danghlink =
   "https://github.com/Colloke";
@@ -40,10 +40,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Emler}
               isBlog={false}
-              title="Placeholder"
-              description="Placeholder"
+              title="Emler Swim School"
+              description="Automated front desk processes"
               ghLink={danghlink}
               demoLink=""
             />
