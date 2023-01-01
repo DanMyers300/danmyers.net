@@ -54,7 +54,7 @@ function Home2() {
                   collaboration skills
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; like 
               <i>
                 <b className="purple">Communication</b>
               </i>
