@@ -5,7 +5,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import styles from '../styles/Footer.module.css';
+import styles from '@/styles/Footer.module.css';
 
 const instalink =
   "https://www.instagram.com/dangandolf"

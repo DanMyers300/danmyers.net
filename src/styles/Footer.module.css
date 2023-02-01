@@ -1,9 +1,6 @@
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-width: fit-content;
-    margin-top: 0 auto;
-    min-height: 100vh;
+    min-height: fit-content;
     background-color: rgb(128, 1, 191);
 }
