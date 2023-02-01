@@ -1,5 +1,9 @@
 .footer {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
     padding-top: 10px;
     padding-bottom: 8px;
