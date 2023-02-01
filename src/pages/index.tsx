@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Index.module.css'
 import { Home } from '@/components/Home'
+import { Footer } from '@/components/Footer'
 
 export default function Index() {
   return (
@@ -14,6 +15,9 @@ export default function Index() {
       <main className={styles.main}>
         <Home />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

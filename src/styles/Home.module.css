@@ -1,6 +1,7 @@
 .container {
     background-color: black;
-    min-height: 100vh;
+    height: calc(100vh - 3px);
+    width: calc(100vh - 3px);
     display: flex;
     flex-direction: column;
     justify-content: center;
