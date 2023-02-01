@@ -6,10 +6,10 @@ export const Header = () => {
         <header className={styles.header}>
             <h1 className={styles.title}>Nav</h1>
             <p className={styles.description}>
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/Projects">Projects</Link>
-                <Link href="/contact">Contact</Link>
+                <Link className={styles.navLink} href="/">Home</Link>
+                <Link className={styles.navLink} href="/about">About</Link>
+                <Link className={styles.navLink} href="/Projects">Projects</Link>
+                <Link className={styles.navLink} href="/contact">Contact</Link>
             </p>
         </header>
     )
