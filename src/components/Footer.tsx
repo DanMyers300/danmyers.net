@@ -22,10 +22,10 @@ function Footer() {
   return (
     <Container fluid className={styles.footer}>
       <Row>
-        <Col md="4" className={styles.footerCopyright}>
+        <Col md="4" className={styles.footerName}>
           <h3>Daniel Myers</h3>
         </Col>
-        <Col md="4" className={styles.footerCopyright}>
+        <Col md="4" className={styles.footerYear}>
           <h3>{year}</h3>
         </Col>
         <Col md="4" className={styles.footerBody}>

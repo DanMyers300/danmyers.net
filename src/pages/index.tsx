@@ -8,8 +8,10 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <MainHomePage />
-        <Footer />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
