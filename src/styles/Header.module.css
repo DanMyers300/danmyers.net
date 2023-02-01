@@ -2,8 +2,21 @@
     background: #333;
     color: #fff;
     padding: 10px;
+    display: flex;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    width: fit-content;
 }
 
 .description {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 10px;
+    padding: 10px;
     font-size: 15px;
 }
