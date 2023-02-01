@@ -5,11 +5,16 @@
     display: flex;
 }
 
-.title {
+.titleContainer {
     font-size: 40px;
     font-weight: bold;
     margin: 0;
     width: fit-content;
+}
+
+.title {
+    text-decoration: none;
+    color: #fff;
 }
 
 .description {
@@ -28,5 +33,5 @@
 }
 
 .navLink:hover {
-    transform: translate(0, -2px);
+    transform: translate();
 }
