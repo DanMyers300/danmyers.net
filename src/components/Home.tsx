@@ -7,7 +7,7 @@ export const Home = () => {
         <p className={styles.description}>
             Welcome to 
             <br /> 
-            <code className={styles.code}>danmyers.net</code>
+            <code className={styles.code}>DanMyers.net</code>
         </p>
         </div>
     )
