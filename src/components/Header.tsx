@@ -9,7 +9,7 @@ export const Header = () => {
             </p>
             <ul className={styles.description}>
                 <Link className={styles.navLink} href="/about">About</Link>
-                <Link className={styles.navLink} href="/Projects">Projects</Link>
+                <Link className={styles.navLink} href="/projects">Projects</Link>
                 <Link className={styles.navLink} href="/contact">Contact</Link>
             </ul>
         </header>

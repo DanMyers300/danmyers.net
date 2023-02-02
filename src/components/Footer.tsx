@@ -22,9 +22,6 @@ export const Footer = () => {
             <p className={styles.year}>
                 © {year}
             </p>
-            <p className={styles.name}>
-                Dan Myers
-            </p>
             <ul className={styles.footerIcons}>
                 <li className={styles.socialIcons}>
                     <a

@@ -9,7 +9,7 @@
 }
 
 .title {
-    color: white;
+    color:  black;
     font-size: 3rem;
     font-weight: 600;
     margin: 0;
@@ -18,12 +18,12 @@
 }
 
 .description {
-    color: white;
+    color: black;
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
 }
 
 .code {
-    color: purple;
+    color: rgb(37, 219, 37);
 }
