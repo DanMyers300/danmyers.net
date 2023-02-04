@@ -1,5 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
+
 import styles from '@/styles/Header.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Header = () => {
 
@@ -7,7 +10,7 @@ export const Header = () => {
         <header className={styles.header}>
             <p className={styles.titleContainer}>
                 <Link href="/">
-                <img className={styles.logo} src='/logo.png'/>
+                <img alt="Dan's Logo" className={styles.logo} src='/logo.png'/>
                 </Link>
             </p>
             <ul className={styles.description}>
