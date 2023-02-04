@@ -1,7 +1,7 @@
 .container {
     background-image: url("https://wallpaperaccess.com/full/5143599.jpg");
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 139px);
     width: 100%;
     flex-direction: column;
     justify-content: center;

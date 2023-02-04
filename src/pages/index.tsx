@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
-import styles from '@/styles/Index.module.css'
 import { Home } from '@/components/Home'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -16,7 +15,7 @@ export default function Index() {
       <header>
       <Header />
       </header>
-      <main className={styles.main}>
+      <main>
         <Home />
       </main>
       <footer>
