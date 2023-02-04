@@ -12,9 +12,9 @@
     width: fit-content;
 }
 
-.title {
-    text-decoration: none;
-    color: #fff;
+.logo {
+    height: 50px;
+    width: fit-content;
 }
 
 .description {

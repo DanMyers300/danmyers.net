@@ -1,11 +1,17 @@
 import styles from '@/styles/Header.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const Header = () => {
+
+    const logo = ('/public/')
+
     return (
         <header className={styles.header}>
             <p className={styles.titleContainer}>
-                <Link className={styles.title} href="/">Dan</Link>
+                <Link href="/">
+                    <img className={styles.logo} src={logo}/>
+                </Link>
             </p>
             <ul className={styles.description}>
                 <Link className={styles.navLink} href="/about">About</Link>
