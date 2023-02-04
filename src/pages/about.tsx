@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { AboutPage } from "@/components/AboutPage";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
     <Header />
     </header>
     <main>
-      <h1>About</h1>
+      <AboutPage />
     </main>
     <footer>
       <Footer />

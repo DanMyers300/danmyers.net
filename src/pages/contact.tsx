@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ContactPage } from "@/components/ContactPage";
 
 export default function Contact() {
   return (
@@ -15,7 +16,7 @@ export default function Contact() {
     <Header />
     </header>
     <main>
-      <h1>Contact</h1>
+      <ContactPage />
     </main>
     <footer>
       <Footer />

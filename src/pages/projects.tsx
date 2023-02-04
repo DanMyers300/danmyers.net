@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ProjectsPage } from "@/components/ProjectsPage";
 
 export default function Projects() {
   return (
@@ -15,7 +16,7 @@ export default function Projects() {
     <Header />
     </header>
     <main>
-      <h1>Projects</h1>
+      <ProjectsPage />
     </main>
     <footer>
       <Footer />
