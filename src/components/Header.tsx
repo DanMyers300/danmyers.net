@@ -2,7 +2,6 @@
 
 import styles from '@/styles/Header.module.css'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export const Header = () => {
 
@@ -16,7 +15,7 @@ export const Header = () => {
             <ul className={styles.description}>
                 <Link className={styles.navLink} href="/about">About</Link>
                 <Link className={styles.navLink} href="/projects">Projects</Link>
-                <Link className={styles.navLink} href="/contact">Contact</Link>
+                <Link className={styles.navLink} href="mailto:contact@danmyers.net" /*href="/contact"*/>Contact</Link>
             </ul>
         </header>
     )
