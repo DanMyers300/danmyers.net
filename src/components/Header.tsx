@@ -7,7 +7,7 @@ export const Header = () => {
         <header className={styles.header}>
             <p className={styles.titleContainer}>
                 <Link href="/">
-                    <img className={styles.logo} src='/logo.png'/>
+                <img className={styles.logo} src='/logo.png'/>
                 </Link>
             </p>
             <ul className={styles.description}>
