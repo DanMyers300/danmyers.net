@@ -11,6 +11,14 @@ export const Clock = () => {
         const secondsDegrees = ((seconds / 60) * 360) + 90;
         const secondHand = document.querySelector(`.${styles.secondHand}`) as HTMLElement;
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+        // This is to prevent the second hand from snapping back to 0 when seconds=60
+        if (
+            secondsDegrees === 90 ||
+            secondsDegrees === 444
+        ) {
+            secondHand.style.transition = 'none';
+        }
         
         // // Minutes
         // const mins = now.getMinutes();
@@ -43,6 +51,5 @@ TODO:
 
 1) Make the other hands of the clock work
 2) Figure out as HTMLElement
-3) Figure out how to not have the snap back at 59>0 seconds
 
 */
