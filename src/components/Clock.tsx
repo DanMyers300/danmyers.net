@@ -5,13 +5,27 @@ export const Clock = () => {
 
     function setDate() {
         const now = new Date();
+        
+        // Seconds
         const seconds = now.getSeconds();
         const secondsDegrees = ((seconds / 60) * 360) + 90;
         const secondHand = document.querySelector(`.${styles.secondHand}`) as HTMLElement;
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+        
+        // // Minutes
+        // const mins = now.getMinutes();
+        // const minsDegrees = ((mins / 60) * 360) + ((seconds / 60) * 6) + 90;
+        // const minHand = document.querySelector(`.${styles.minHand}`) as HTMLElement;
+        // minHand.style.transform = `rotate(${minsDegrees}deg)`;
+        
+        // // Hours
+        // const hour = now.getHours();
+        // const hourDegrees = ((hour / 12) * 360) + ((mins / 60) * 30) + 90;
+        // const hourHand = document.querySelector(`.${styles.hourHand}`) as HTMLElement;
+        // hourHand.style.transform = `rotate(${hourDegrees}deg)`;        
     }
-
     setInterval(setDate, 1000);
+
     return (
     <div className={styles.clock}>
         <div className={styles.clockFace}>
@@ -22,3 +36,13 @@ export const Clock = () => {
     </div>
     );
 };
+
+/*
+
+TODO:
+
+1) Make the other hands of the clock work
+2) Figure out as HTMLElement
+3) Figure out how to not have the snap back at 59>0 seconds
+
+*/
