@@ -38,8 +38,8 @@ export const Clock = () => {
     <div className={styles.clock}>
         <div className={styles.clockFace}>
             <div className={`${styles.hand} ${styles.hourHand}`}></div>
-            <div className={`${styles.hand} ${styles.minHand}`}></div>
-            <div className={`${styles.hand} ${styles.secondHand}`}></div>
+            {/* <div className={`${styles.hand} ${styles.minHand}`}></div>
+            <div className={`${styles.hand} ${styles.secondHand}`}></div> */}
         </div>
     </div>
     );
