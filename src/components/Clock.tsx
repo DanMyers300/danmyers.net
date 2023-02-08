@@ -9,6 +9,7 @@ export const Clock = () => {
         // Seconds
         const seconds = now.getSeconds();
         const secondsDegrees = ((seconds / 60) * 360) + 90;
+        // For some reason this code bricks the other pages if they don't have the clock element, I think it has to do with as HTMLElement
         const secondHand = document.querySelector(`.${styles.secondHand}`) as HTMLElement;
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
@@ -50,7 +51,6 @@ export const Clock = () => {
 
 TODO:
 
-1) Make the other hands of the clock work
-2) Figure out as HTMLElement
+2) Figure out as HTMLElement so that it doesn't brick the other pages
 
 */

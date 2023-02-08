@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AboutPage } from "@/components/AboutPage";
+import { Clock } from "@/components/Clock";
 
 export default function About() {
   return (
