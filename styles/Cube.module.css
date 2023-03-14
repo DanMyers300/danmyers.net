@@ -15,6 +15,7 @@
         overflow: hidden;
 }
 
+
 .poswrap{
     transform-style: preserve-3d;
     position: absolute;
@@ -91,6 +92,10 @@
 }
 
 
+.cube_face:hover {
+    scale: 1.01;
+}
+
 /* - - - - - Additional cube styling - - - - - */
 
 
@@ -110,7 +115,6 @@
     10%{background-color: #666;}
     20%{background-color: #333;}
 }
-
 
 
 /* - - - - - Cube face transforms - - - - -
