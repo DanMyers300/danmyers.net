@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
+import CubeCompontent from '../components/CubeComponent'
 
 export default function Home() {
   return (
@@ -11,9 +12,7 @@ export default function Home() {
         <link rel="icon" href="/" />
       </Head>
       <main className={styles.main}>
-        <p>
-          Hello world!
-        </p>
+        <CubeCompontent />
       </main>
     </>
   )
