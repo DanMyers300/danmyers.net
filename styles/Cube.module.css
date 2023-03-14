@@ -1,0 +1,8 @@
+.face {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    transform: rotateX(45deg) rotateY(45deg);
+    transform-style: preserve-3d;
+    animation: spin 2s linear infinite;
+}
