@@ -4,7 +4,7 @@ export default function CubeCompontent() {
     
     function handleCubeClick() {
         const info = document.getElementById('toggle') as HTMLDivElement;
-        console.log(info);
+        info.style.visibility = 'visible';
     }
     
     if (typeof document !== 'undefined') {

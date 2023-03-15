@@ -16,7 +16,7 @@
 }
 
 .info {
-    display: none;
+    visibility: hidden;
 }
 
 .poswrap{
