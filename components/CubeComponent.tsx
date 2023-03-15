@@ -1,20 +1,26 @@
 import styles from '@/styles/Cube.module.css'
 
-export default function CubeCompontent() {
+export default function CubeCompontent() {   
     
-    const handleCubeClick = () => {
-        console.log(`clicked`)
+    function handleCubeClick() {
+        const info = document.getElementById('toggle') as HTMLDivElement;
+        console.log(info);
     }
     
     if (typeof document !== 'undefined') {
     const CubeClick= document.getElementById('cubewrapper') as HTMLDivElement;
     CubeClick?.addEventListener('click', () => {
         handleCubeClick();
-    });
+    })
     }
 
     return (
         <div className={styles.wrapper} id="cubewrapper">
+            <div className={styles.info} id="toggle">
+                <p>
+                    Hello World!
+                </p>
+            </div>
         <div className={styles.poswrap}>
         <div className={styles.floatwrap}>
         <div className={styles.spinwrap}>

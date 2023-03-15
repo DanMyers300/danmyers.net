@@ -15,6 +15,9 @@
         overflow: hidden;
 }
 
+.info {
+    display: none;
+}
 
 .poswrap{
     transform-style: preserve-3d;
