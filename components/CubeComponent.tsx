@@ -3,9 +3,11 @@ import { info } from 'console';
 
 export default function CubeCompontent() {   
 
-    if (typeof document !== 'undefined') {
+    if (typeof document !== 'undefined') { // Required by Typescript
+
         const cubeWrapper= document.getElementById('cubewrapper') as HTMLDivElement;
         const info = document.getElementById('cubeText') as HTMLDivElement;
+
         cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
         cubeWrapper?.addEventListener('click', () => {
             handleCubeClick();
@@ -17,6 +19,7 @@ export default function CubeCompontent() {
         const hideCube = () => {
             info.style.visibility = 'hidden';
         }
+
         setTimeout(hideCube, 2000);
     }
 
