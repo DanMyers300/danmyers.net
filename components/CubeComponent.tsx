@@ -1,10 +1,15 @@
 import styles from '@/styles/Cube.module.css'
 
 export default function CubeCompontent() {
+    
+    const handleCubeClick = () => {
+        console.log(`clicked`)
+    }
+    
     if (typeof document !== 'undefined') {
     const CubeClick= document.getElementById('cubewrapper') as HTMLDivElement;
     CubeClick?.addEventListener('click', () => {
-        console.log('click');
+        handleCubeClick();
     });
     }
 
