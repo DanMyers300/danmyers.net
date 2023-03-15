@@ -1,6 +1,13 @@
 import styles from '@/styles/Cube.module.css'
 
 export default function CubeCompontent() {
+    if (typeof document !== 'undefined') {
+    const CubeClick= document.getElementById('cubewrapper') as HTMLDivElement;
+    CubeClick?.addEventListener('click', () => {
+        console.log('click');
+    });
+    }
+
     return (
         <div className={styles.wrapper} id="cubewrapper">
         <div className={styles.poswrap}>
