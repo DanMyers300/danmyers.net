@@ -167,6 +167,7 @@ Front, Back, Left, Right, Top, Bottom*/
     background-color: #c4c4cf;
 }
 
-.info > p {
-    cursor: pointer;
+.info :first-child{ 
+    text-decoration: none;
+    color: #333;
 }
