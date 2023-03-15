@@ -1,27 +1,28 @@
 import styles from '@/styles/Cube.module.css'
+import { info } from 'console';
 
 export default function CubeCompontent() {   
-    
-    function handleCubeClick() {
-        const info = document.getElementById('toggle') as HTMLDivElement;
-        info.style.visibility = 'visible';
-    }
-    function hideCubeClick() {
-        const info = document.getElementById('toggle') as HTMLDivElement;
-        info.style.visibility = 'hidden';
-    }
 
     if (typeof document !== 'undefined') {
-    const CubeClick= document.getElementById('cubewrapper') as HTMLDivElement;
-    CubeClick?.addEventListener('click', () => {
-        handleCubeClick();
-    })
-    setTimeout(hideCubeClick, 2000);
-}
+        const cubeWrapper= document.getElementById('cubewrapper') as HTMLDivElement;
+        const info = document.getElementById('cubeText') as HTMLDivElement;
+        cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
+        cubeWrapper?.addEventListener('click', () => {
+            handleCubeClick();
+        });
+
+        const handleCubeClick = () => {
+            info.style.visibility = 'visible';
+        }
+        const hideCube = () => {
+            info.style.visibility = 'hidden';
+        }
+        setTimeout(hideCube, 2000);
+    }
 
     return (
         <>
-            <div className={styles.info} id="toggle">
+            <div className={styles.info} id="cubeText">
                 <p>
                     ~ CUBE ~
                 </p>
