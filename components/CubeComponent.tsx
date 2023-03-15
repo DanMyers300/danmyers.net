@@ -8,19 +8,21 @@ export default function CubeCompontent() {
         const cubeWrapper= document.getElementById('cubewrapper') as HTMLDivElement;
         const info = document.getElementById('cubeText') as HTMLDivElement;
 
-        cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
         cubeWrapper?.addEventListener('click', () => {
             handleCubeClick();
         });
 
-        const handleCubeClick = () => {
-            info.style.visibility = 'visible';
-        }
         const hideCube = () => {
             info.style.visibility = 'hidden';
         }
 
-        setTimeout(hideCube, 2000);
+        const handleCubeClick = () => {
+            info.style.visibility = 'visible';
+            setTimeout(hideCube, 2000);
+        }
+
+        cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
+        cubeWrapper?.addEventListener('mouseout', () => {info.style.visibility = 'hidden';});
     }
 
     return (
