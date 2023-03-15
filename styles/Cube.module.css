@@ -15,10 +15,6 @@
         overflow: hidden;
 }
 
-.info {
-    visibility: hidden;
-}
-
 .poswrap{
     transform-style: preserve-3d;
     position: absolute;
@@ -150,4 +146,10 @@ Front, Back, Left, Right, Top, Bottom*/
 .cube :nth-child(6){
     transform: rotateX(-90deg)
         translateZ(100px);
+}
+
+/* - - - - - Click Display - - - - - */
+
+.info {
+    visibility: hidden;
 }
