@@ -1,5 +1,3 @@
-import styles from '@/styles/Cube.module.css'
-
 export default function CubeLogic() {
     if (typeof document !== 'undefined') { // Required by Typescript
 
