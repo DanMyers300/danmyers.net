@@ -6,25 +6,26 @@ export default function CubeCompontent() {
 
         const cubeWrapper= document.getElementById('cubewrapper') as HTMLDivElement;
         const info = document.getElementById('cubeText') as HTMLDivElement;
-        const openText = { "--open": 0 } as React.CSSProperties;
+        let isTextOpen = false;
 
         cubeWrapper?.addEventListener('click', () => {
             handleCubeClick();
-            open
         });
 
         const hideCube = () => {
             info.style.visibility = 'hidden';
+            isTextOpen = false;
         }
 
         const handleCubeClick = () => {
             info.style.visibility = 'visible';
+            isTextOpen = true;
             setTimeout(hideCube, 5000);
         }
 
         cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
         cubeWrapper?.addEventListener('mouseout', () => {
-            info.style.visibility = 'hidden';
+            if (isTextOpen === false){info.style.visibility = 'hidden'};
         });
     }
 
