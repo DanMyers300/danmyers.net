@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import CubeCompontent from '../components/CubeComponent'
+import CubeCompontent from '../components/Cube/CubeComponent'
 
 export default function Home() {
   return (
