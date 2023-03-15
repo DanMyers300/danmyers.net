@@ -152,4 +152,5 @@ Front, Back, Left, Right, Top, Bottom*/
 
 .info {
     visibility: hidden;
+    --clicked: 0;
 }

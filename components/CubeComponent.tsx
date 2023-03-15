@@ -1,5 +1,4 @@
 import styles from '@/styles/Cube.module.css'
-import { info } from 'console';
 
 export default function CubeCompontent() {   
 
@@ -7,9 +6,11 @@ export default function CubeCompontent() {
 
         const cubeWrapper= document.getElementById('cubewrapper') as HTMLDivElement;
         const info = document.getElementById('cubeText') as HTMLDivElement;
+        const openText = { "--open": 0 } as React.CSSProperties;
 
         cubeWrapper?.addEventListener('click', () => {
             handleCubeClick();
+            open
         });
 
         const hideCube = () => {
@@ -18,11 +19,13 @@ export default function CubeCompontent() {
 
         const handleCubeClick = () => {
             info.style.visibility = 'visible';
-            setTimeout(hideCube, 2000);
+            setTimeout(hideCube, 5000);
         }
 
         cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
-        cubeWrapper?.addEventListener('mouseout', () => {info.style.visibility = 'hidden';});
+        cubeWrapper?.addEventListener('mouseout', () => {
+            info.style.visibility = 'hidden';
+        });
     }
 
     return (
