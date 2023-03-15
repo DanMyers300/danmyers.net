@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function CubeLogic() {
     if (typeof document !== 'undefined') { // Required by Typescript
 
