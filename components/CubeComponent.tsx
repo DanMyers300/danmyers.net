@@ -1,6 +1,9 @@
 import styles from '@/styles/Cube.module.css'
 
 export default function CubeCompontent() {
+    document.querySelector('#cubewrapper')?.addEventListener('mousemove', (e) => {
+        console.log(`hello!`)
+    })
     return (
         <div className={styles.wrapper} id="cubewrapper">
         <div className={styles.poswrap}>
