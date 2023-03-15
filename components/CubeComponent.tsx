@@ -27,7 +27,6 @@ export default function CubeCompontent() {
         </div>
         </div>
         </div>
-  
 </div>
     )
 }
