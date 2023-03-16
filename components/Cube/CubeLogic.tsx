@@ -19,7 +19,7 @@ export default function CubeLogic() {
             isTextOpen = true;
             setTimeout(hideCube, 5000);
         }
-        
+        // Need to remove event listeners: https://nextjs.org/learn/foundations/from-javascript-to-react/adding-interactivity-with-state
         cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
         cubeWrapper?.addEventListener('mouseout', () => {
             if (isTextOpen === false){info.style.visibility = 'hidden'};
