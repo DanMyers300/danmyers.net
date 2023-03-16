@@ -3,11 +3,10 @@ import { useRef } from 'react';
 import Link from 'next/link'
 
 export default function CubeCompontent() {   
-    const cubeWrapper = useRef<HTMLDivElement>(null);
     const info = useRef<HTMLDivElement>(null);
     let isTextOpen = false;
     
-    const hideCube = () => {
+    const hideCubeInfo = () => {
         if (info.current) {
             info.current.style.visibility = 'hidden';
             isTextOpen = false;
@@ -18,7 +17,7 @@ export default function CubeCompontent() {
         if (info.current) {
             info.current.style.visibility = 'visible';
             isTextOpen = true;
-            setTimeout(hideCube, 5000);
+            setTimeout(hideCubeInfo, 5000);
         }
     }
 
