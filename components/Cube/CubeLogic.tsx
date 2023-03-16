@@ -19,7 +19,7 @@ export default function CubeLogic() {
             isTextOpen = true;
             setTimeout(hideCube, 5000);
         }
-
+        
         cubeWrapper?.addEventListener('mouseover', () => {info.style.visibility = 'visible';});
         cubeWrapper?.addEventListener('mouseout', () => {
             if (isTextOpen === false){info.style.visibility = 'hidden'};
