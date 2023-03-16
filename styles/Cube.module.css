@@ -170,4 +170,5 @@ Front, Back, Left, Right, Top, Bottom*/
 .info :first-child{ 
     text-decoration: none;
     color: #333;
+    cursor: pointer;
 }
