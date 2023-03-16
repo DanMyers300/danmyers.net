@@ -4,19 +4,22 @@ import Link from 'next/link'
 
 export default function CubeCompontent() {   
     const info = useRef<HTMLDivElement>(null);
-    let isTextOpen = false;
     
     const hideCubeInfo = () => {
         if (info.current) {
             info.current.style.visibility = 'hidden';
-            isTextOpen = false;
+        }
+    }
+
+    const handleCubeHover = () => {
+        if (info.current) {
+            info.current.style.visibility = 'visible';
         }
     }
 
     const handleCubeClick = () => {
         if (info.current) {
             info.current.style.visibility = 'visible';
-            isTextOpen = true;
             setTimeout(hideCubeInfo, 5000);
         }
     }
@@ -26,7 +29,7 @@ export default function CubeCompontent() {
             <div className={styles.info} ref={info}>        
                 <Link href="/Resume">Resume</Link>
             </div>
-            <div onClick={handleCubeClick} className={styles.wrapper} ref={cubeWrapper}>
+            <div onClick={handleCubeClick} onMouseEnter={handleCubeHover} className={styles.wrapper}>
                 <div className={styles.poswrap}>
                     <div className={styles.floatwrap}>
                         <div className={styles.spinwrap}>
