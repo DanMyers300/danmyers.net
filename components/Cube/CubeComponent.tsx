@@ -1,43 +1,12 @@
 import styles from '@/styles/Cube.module.css'
-import { useRef } from 'react';
 import Link from 'next/link'
+import CubeLogic from './CubeLogic'
 
-export default function CubeCompontent() {   
-    const info = useRef<HTMLDivElement>(null);
-    let isOpen = false;
-    
-    const hideCubeInfo = () => {
-        if (info.current) {
-            info.current.style.visibility = 'hidden';
-            isOpen = false;
-        }
-    }
-
-    const endCubeHover = () => {
-        if (info.current) {
-            if (!isOpen) {
-                info.current.style.visibility = 'hidden';
-            }
-        }
-    }
-
-    const handleCubeHover = () => {
-        if (info.current) {
-            info.current.style.visibility = 'visible';
-        }
-    }
-
-    const handleCubeClick = () => {
-        if (info.current) {
-            info.current.style.visibility = 'visible';
-            isOpen = true;
-            setTimeout(hideCubeInfo, 5000);
-        }
-    }
-
+export default function CubeCompontent() {
+    const { handleCubeClick, handleCubeHover, endCubeHover, info } = CubeLogic();
     return (
         <>
-            <div className={styles.info} ref={info}>        
+            <div className={styles.info} ref={info}>
                 <Link href="/Resume">Resume</Link>
             </div>
             <div onClick={handleCubeClick} onMouseEnter={handleCubeHover} onMouseLeave={endCubeHover} className={styles.wrapper}>
