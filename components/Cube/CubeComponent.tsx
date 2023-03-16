@@ -3,7 +3,6 @@ import CubeInfo from './CubeInfo'
 import CubeLogic from './CubeLogic'
 
 export default function CubeCompontent() {   
-
     CubeLogic();
 
     return (
