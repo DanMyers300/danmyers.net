@@ -5,7 +5,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-            Welcome to Dan&aposs Website!
+            Welcome to Dan&apos;s Website!
         </p>
       </div>
     </main>
