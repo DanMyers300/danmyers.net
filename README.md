@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://www.buymeacoffee.com/mubeenahmad" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="width: 130px;" ></a>
 
-## Getting Started
+# Simple Portfolio Website
 
-First, run the development server:
+A simple portfolio website to showcase your work and projects. <a href="https://muhammadmubeen17.github.io/simple-portfolio-website" target="_blank">Click here to visit</a>
+<div align="center">
+  <a href="https://muhammadmubeen17.github.io/simple-portfolio-website" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /></a>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<br/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## **Built With**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project was built using the following technologies.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Bootstrap
+- FontAwesome Icons
+- Bootstrap Icons
 
-## Learn More
+## **Features**
 
-To learn more about Next.js, take a look at the following resources:
+- **📖 Single-Page Layout**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **🎨 Styled with Bootstrap and Css**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **📱 Fully Responsive**
 
-## Deploy on Vercel
+## **Getting Started**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Clone down this repository. You will need `git` installed globally on your machine.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🛠 Setup Instructions
+
+Run this command to clone the repository: 
+
+    git clone https://github.com/muhammadmubeen17/simple-portfolio-website.git
+
+## **Show your support**
+
+Give a ⭐ if you like this website!
+
+<a href="https://www.buymeacoffee.com/mubeenahmad" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
