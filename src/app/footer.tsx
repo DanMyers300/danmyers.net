@@ -4,7 +4,7 @@ import styles from './footer.module.css'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      Footer :) 
+      Dan Myers &copy; 2023 
     </footer>
   );
 };
