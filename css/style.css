@@ -1178,6 +1178,11 @@
     color: #FFFFFF;
 }
 
+.footer-copyright > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 @media (max-width: 426px) {
     .footer {
         padding: 30px 30px 20px 30px !important;
