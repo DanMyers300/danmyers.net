@@ -19,10 +19,21 @@ function openInNewPage(url) {
   window.open(url, '_blank');
 }
 
+
 document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('toggleButton');
-    toggleButton.addEventListener('click', () => {
-      const root = document.documentElement;
-      root.classList.toggle('dark-theme');
-    });
+  const root = document.documentElement;
+  const themeToggleButton = document.querySelector('.tdnn');
+
+  function toggleTheme() {
+    root.classList.toggle('dark-theme');
+  }
+
+  themeToggleButton.addEventListener('click', () => {
+    const moonElement = document.querySelector('.moon');
+    moonElement.classList.toggle('sun');
+    themeToggleButton.classList.toggle('day');
+    document.body.classList.toggle('light');
+    toggleTheme();
   });
+});
+

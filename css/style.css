@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&display=swap');
 
+
 :root {
+  --white: #000;
+  --offWhite: rgba(0, 0, 0, 0.8);
+  --offerWhite: #070808;
+  --lightGrey: #0D0D0D;
+  --lighterGrey: #3A3A3A;
+  --grey: rgba(255, 255, 255, 0.2);
+  --grey90: #1A1A1A;
+  --grey3: rgba(255, 255, 255, 0.3);
+  --grey4: rgba(255, 255, 255, 0.4);
+  --grey5: rgba(255, 255, 255, 0.5);
+  --grey6: rgba(255, 255, 255, 0.6);
+  --darkGrey: #BAAAAA;
+  --charcoal: #CCC;
+  --lightCarcoal: #999999;
+  --black: #fff;
+  --offBlack: rgba(255, 255, 255, 0.8);
+}
+
+.dark-theme {
   --white: #fff;
   --offWhite: rgba(255, 255, 255, 0.8);
   --offerWhite: #F8F9FA;
@@ -19,25 +39,6 @@
   --offBlack: rgba(0, 0, 0, 0.8);
   --yellow: #FED85F;
   --blue: #3E64FF;
-}
-
-.dark-theme {
-  --white: #000;
-  --offWhite: rgba(0, 0, 0, 0.8);
-  --offerWhite: #070808;
-  --lightGrey: #0D0D0D;
-  --lighterGrey: #3A3A3A;
-  --grey: rgba(255, 255, 255, 0.2);
-  --grey90: #1A1A1A;
-  --grey3: rgba(255, 255, 255, 0.3);
-  --grey4: rgba(255, 255, 255, 0.4);
-  --grey5: rgba(255, 255, 255, 0.5);
-  --grey6: rgba(255, 255, 255, 0.6);
-  --darkGrey: #BAAAAA;
-  --charcoal: #CCC;
-  --lightCarcoal: #999999;
-  --black: #fff;
-  --offBlack: rgba(255, 255, 255, 0.8);
 }
 /* NAVBAR */
 
