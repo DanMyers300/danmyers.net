@@ -19,3 +19,10 @@ function openInNewPage(url) {
   window.open(url, '_blank');
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleButton');
+    toggleButton.addEventListener('click', () => {
+      const root = document.documentElement;
+      root.classList.toggle('dark-theme');
+    });
+  });
