@@ -43,5 +43,25 @@ document.addEventListener('DOMContentLoaded', () => {
       updateStatusText('Currently not working');
     }
   });
-});
 
+  // Get the server URL element by its id
+  const serverUrlElement = document.getElementById('serverUrl');
+
+  // Add a click event listener to the server URL element
+  serverUrlElement.addEventListener('click', copyToClipboard);
+
+  function copyToClipboard() {
+    const serverUrl = serverUrlElement.innerText;
+
+    // Use the Clipboard API to write the URL to the clipboard
+    navigator.clipboard.writeText(serverUrl)
+      .then(() => {
+        // Successful copy
+        alert('URL copied to clipboard!');
+      })
+      .catch((error) => {
+        // Failed to copy
+        console.error('Failed to copy:', error);
+      });
+  }
+});
