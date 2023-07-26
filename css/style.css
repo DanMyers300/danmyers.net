@@ -18,6 +18,8 @@
   --lightCarcoal: #999999;
   --black: #fff;
   --offBlack: rgba(255, 255, 255, 0.8);
+  --yellow: #FED85F;
+  --blue: #3E64FF;
 }
 
 .dark-theme {
@@ -598,6 +600,7 @@
 }
 
 .sec5-portfolio-head {
+    color: var(--charcoal);
     font-size: 24px;
     text-transform: uppercase;
     font-weight: bold;
@@ -1156,11 +1159,11 @@
 }
 
 .social-icons {
-    color: var(--white);
+    color: white;
 }
 
 .social-icons:hover {
-    color: var(--lighterGrey);
+    color: #C5C5C5;
 }
 
 .social-icons:not(:last-child) {
