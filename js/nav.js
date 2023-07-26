@@ -18,3 +18,4 @@ $(document).on("scroll", function(){
 function openInNewPage(url) {
   window.open(url, '_blank');
 }
+
