@@ -38,8 +38,6 @@
   --lightCarcoal: #999999;
   --black: #fff;
   --offBlack: rgba(255, 255, 255, 0.8);
-  --yellow: #0127A1;
-  --blue: #C1B3FF;
 }
 /* NAVBAR */
 
@@ -176,6 +174,7 @@
 }
 
 .primary-heading {
+    color: var(--charcoal);
     font-size: 48px;
     font-weight: 300;
     letter-spacing: 4px;
@@ -188,6 +187,7 @@
 }
 
 .paragraph {
+    color: var(--charcoal);
     width: 50%;
     font-size: 18px;
 }
@@ -417,7 +417,8 @@
 }
 
 .sec4-text {
-    font-size: 18px;
+  color: var(--charcoal);
+  font-size: 18px;
 }
 
 @media (max-width: 991px) {
@@ -957,11 +958,13 @@
 /* CONTACT */
 
 .contact-heading {
+    color: var(--charcoal);
     font-size: 62px;
     font-weight: bold;
 }
 
 .contact-para {
+    color: var(--charcoal);
     font-size: 18px;
     letter-spacing: 4px;
     margin-top: 10px;
@@ -1006,7 +1009,7 @@
 }
 
 .card-para {
-    color: var(--lightCarcoal);
+    color: black;
     margin: 15px auto 0px auto;
 }
 
@@ -1125,7 +1128,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: var(--grey6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .section-7-inner {
@@ -1212,16 +1215,16 @@
 
 .footer {
     padding: 50px 50px 30px 50px !important;
-    background-color: var(--black);
+    background-color: black;
 }
 
 .section-footer-inner {
-    color: var(--white);
+    color: white;
 }
 
 .footer-copyright > a {
     text-decoration: none;
-    color: var(--white);
+    color: white;
 }
 
 @media (max-width: 426px) {
