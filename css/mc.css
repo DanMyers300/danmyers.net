@@ -23,6 +23,13 @@ body {
 	overflow: hidden;
 }
 
+.alert_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .main {
 	position: absolute;
 	height: 100%;
@@ -37,6 +44,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+  margin-top: -15em;
 }
 
 .title {
