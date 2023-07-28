@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusText = document.getElementById('statusText');
 
     let action = 'start';
-    const apiUrl = 'https://your-api-gateway-url.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
+    const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
 
     const updateStatusText = (text) => {
         statusText.textContent = text;
