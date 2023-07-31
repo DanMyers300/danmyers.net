@@ -5,8 +5,6 @@ This is a simple and clean portfolio website showcasing my work, skills, and exp
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 
