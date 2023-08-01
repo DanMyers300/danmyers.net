@@ -9,7 +9,7 @@ This is a simple and clean portfolio website showcasing my work, skills, and exp
 - [Contributing](#contributing)
 
 ## Introduction
-Welcome to my portfolio website! Here, you will find a collection of my projects, professional experiences, and skills. This website is designed to give you a glimpse of my abilities and creativity as a professional in [insert your field here].
+Welcome to my portfolio website! Here, you will find a collection of my projects, professional experiences, and skills. This website is designed to give you a glimpse of my abilities and creativity as a professional in webdev.
 
 ## Features
 - **Project Showcase:** A dedicated section to display my portfolio projects with descriptions and images.
