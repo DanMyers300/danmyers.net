@@ -1224,11 +1224,20 @@
 
 .section-footer-inner {
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 .footer-copyright > a {
     text-decoration: none;
     color: white;
+}
+
+.footer-headline,
+.footer-text {
+    text-align: center;
 }
 
 @media (max-width: 426px) {
