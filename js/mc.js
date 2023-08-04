@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const data = await response.json();
       const body = JSON.parse(data.body);
       const status = body.status;
-      if (status === 'up') {
+      if (status === 'running') {
         updateStatusText(`Server is ${body.current_status}`);
       } else {
         updateStatusText('Server is down');
