@@ -9,12 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const handleServerResponse = (data) => {
-    if (data && data.status === 'start') {
-      updateStatusText('Server started');
-    } else if (data && data.status === 'stop') {
-      updateStatusText('Server stopped');
-    } else {
-      updateStatusText('Unknown status');
+    try {
+      const parsedData = JSON.parse(data.body);
+      if (parsedData && parsedData.status === 'start') {
+        updateStatusText('Server started');
+      } else if (parsedData && parsedData.status === 'stop') {
+        updateStatusText('Server stopped');
+      } else {
+        updateStatusText('Unknown status');
+      }
+    } catch (error) {
+      console.error('Error parsing server response:', error);
+      updateStatusText('Error parsing server response');
     }
   };
 
@@ -54,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await response.json();
 
       if (response.status === 200) {
-        handleServerResponse(JSON.parse(data.body));
+        handleServerResponse(data);
       } else {
         updateStatusText('Error communicating with server');
       }
