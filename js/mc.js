@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const handleServerResponse = (data) => {
+    console.log('Response from server:', data); // Add this log to see the server response
+
     try {
       const parsedData = JSON.parse(data.body);
       if (parsedData && parsedData.status === 'start') {
@@ -58,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       const data = await response.json();
+      console.log('Response from server:', data); // Add this log to see the server response
 
       if (response.status === 200) {
         handleServerResponse(data);
