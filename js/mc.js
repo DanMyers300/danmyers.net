@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const statusText = document.getElementById('statusText');
 
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
-  const checkStatusUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/check_status';
 
   const updateStatusText = (text) => {
     statusText.textContent = text;
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Initial status check
   try {
-    const response = await fetch(checkStatusUrl);
+    const response = await fetch(apiUrl);
     if (response.ok) {
       const data = await response.json();
       const body = JSON.parse(data.body);
