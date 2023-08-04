@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const updateStatusText = (text) => {
     statusText.textContent = text;
   };
-
   const updateToggleButton = (status) => {
     toggleButton.checked = status === 'running';
   };
@@ -65,12 +64,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // Initial status check
   checkServerStatus();
 
-  // Periodically check server status every 10 seconds (adjust the interval as needed)
-  setInterval(checkServerStatus, 10000); // 10000 ms = 10 seconds
-
+  setInterval(checkServerStatus, 10000);
   toggleButton.addEventListener('change', () => {
     let action;
     if (toggleButton.checked) {
