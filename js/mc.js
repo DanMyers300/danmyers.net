@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
   const updateToggleButton = (status) => {
     toggleButton.checked = status === 'running';
+    toggleButton.check = status === 'pending';
   };
 
   const performAction = async (action) => {
