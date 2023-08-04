@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (response.ok) {
-        const data = await response.text();
-        updateStatusText(data); // Display the entire response "body" as the status text
+        const data = await response.json(); // Parse the response as JSON
+        updateStatusText(data.message); // Update status text with the "message" part of the JSON
       } else {
         updateStatusText('Error communicating with server');
       }
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (response.ok) {
-        const data = await response.text();
-        updateStatusText(data); // Display the entire response "body" as the status text
+        const data = await response.json(); // Parse the response as JSON
+        updateStatusText(data.message); // Update status text with the "message" part of the JSON
       } else {
         updateStatusText('Error communicating with server');
       }
