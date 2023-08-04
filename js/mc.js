@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const statusText = document.getElementById('statusText');
 
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
+  const serverUrl = 'https://mc.danmyers.net';
 
   const updateStatusText = (text) => {
     statusText.textContent = text;
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const checkServerStatus = async () => {
     try {
-      const response = await fetch('https://mc.danmyers.net');
+      const response = await fetch(serverUrl);
       if (response.status === 200) {
         updateStatusText('Server online');
       } else {
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  // Call the checkServerStatus function on page load to check server status
   checkServerStatus();
 
   toggleButton.addEventListener('change', async () => {
