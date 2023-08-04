@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (response.ok) {
         const data = await response.json(); // Parse the response as JSON
+        console.log('Response Data:', data); // Add this line to see the response data
         const body = JSON.parse(data.body); // Parse the "body" property as JSON
         updateStatusText(body.message); // Update status text with the "message" part of the JSON
       } else {
