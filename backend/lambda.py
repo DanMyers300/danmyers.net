@@ -22,7 +22,7 @@ def get_instance_status(instance_id):
     return response['Reservations'][0]['Instances'][0]['State']['Name']
 
 def lambda_handler(event, context):
-    print("Received Lambda request:", event)  # Add this print statement
+    print("Received Lambda request:", event)
 
     instance_id = get_instance_id()
     action = event.get('action')
@@ -64,7 +64,7 @@ def lambda_handler(event, context):
                     'Access-Control-Allow-Headers': 'Content-Type',
                     'Access-Control-Allow-Methods': 'POST',
                 },
-                'body': json.dumps({'status': current_status, 'message': f"EC2 instance is {current_status}."})
+                'body': json.dumps({'status': current_status, 'message': f"Server is {current_status}."})
             }
         else:
             return {
@@ -87,7 +87,7 @@ def lambda_handler(event, context):
                 'Access-Control-Allow-Headers': 'Content-Type',
                 'Access-Control-Allow-Methods': 'POST',
             },
-            'body': json.dumps({'status': current_status, 'message': f"EC2 instance {action} request successful."})
+            'body': json.dumps({'status': current_status, 'message': f"Server {action} request successful."})
         }
 
     except Exception as e:
