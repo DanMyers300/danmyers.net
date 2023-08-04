@@ -9,22 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     statusText.textContent = text;
   };
 
-  const checkServerStatus = async () => {
-    try {
-      const response = await fetch(serverUrl);
-      if (response.status === 200) {
-        updateStatusText('Server online');
-      } else {
-        updateStatusText('Server offline');
-      }
-    } catch (error) {
-      updateStatusText('Server offline');
-    }
-  };
-
-  // Call the checkServerStatus function on page load to check server status
-  checkServerStatus();
-
   toggleButton.addEventListener('change', async () => {
     let action;
     if (toggleButton.checked) {
@@ -37,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const response = await fetch(apiUrl, {
         method: 'POST',
-        body: JSON.stringify({ action: 'ping' }), // Change 'ping' to 'start' or 'stop' when necessary
+        body: JSON.stringify({ action }), // Change 'ping' to 'start' or 'stop' when necessary
         headers: {
           'Content-Type': 'application/json'
         }
