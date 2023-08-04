@@ -8,24 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     statusText.textContent = text;
   };
 
-  const handleServerResponse = (data) => {
-    console.log('Response from server:', data);
-
-    try {
-      const parsedData = JSON.parse(data);
-      const body = JSON.parse(parsedData.body);
-
-      if (body.message) {
-        updateStatusText(body.message);
-      } else {
-        updateStatusText('Unknown status');
-      }
-    } catch (error) {
-      console.error('Error parsing server response:', error);
-      updateStatusText('Error parsing server response');
-    }
-  };
-
   const getStatusFromServer = async () => {
     try {
       const response = await fetch(apiUrl, {
@@ -34,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (response.ok) {
         const data = await response.text();
-        handleServerResponse(data);
+        updateStatusText(data); // Display the entire response "body" as the status text
       } else {
         updateStatusText('Error communicating with server');
       }
@@ -61,8 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (response.ok) {
         const data = await response.text();
-        console.log('Response from server:', data);
-        handleServerResponse(data);
+        updateStatusText(data); // Display the entire response "body" as the status text
       } else {
         updateStatusText('Error communicating with server');
       }
