@@ -26,13 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
   checkServerStatus();
 
   toggleButton.addEventListener('change', async () => {
-    const action = toggleButton.checked ? 'start' : 'stop';
+    let action;
+    if (toggleButton.checked) {
+      action = 'start';
+    } else {
+      action = 'stop';
+    }
     updateStatusText('Loading');
 
     try {
       const response = await fetch(apiUrl, {
         method: 'POST',
-        body: JSON.stringify({ action: action }),
+        body: JSON.stringify({ action: 'ping' }), // Change 'ping' to 'start' or 'stop' when necessary
         headers: {
           'Content-Type': 'application/json'
         }
