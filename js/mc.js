@@ -1,3 +1,4 @@
+// Control the minecraft.danmyers.net server
 document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.getElementById('serverToggle');
   const statusText = document.getElementById('statusText');
