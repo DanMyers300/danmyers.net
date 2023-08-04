@@ -55,6 +55,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.log(status)
       if (status === 'running') {
         updateStatusText(`Server is ${status}`);
+      } else if (status === 'pending') {
+        updateStatusText('Server is starting');
+      } else if (status === 'stopping') {
+        updateStatusText('Server is stopping');  
       } else {
         updateStatusText('Server is down');
       }
