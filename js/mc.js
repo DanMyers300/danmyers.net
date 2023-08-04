@@ -41,7 +41,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Initial status check
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      body: JSON.stringify({ action: 'checkServer' }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
     if (response.ok) {
       const data = await response.json();
       const body = JSON.parse(data.body);
