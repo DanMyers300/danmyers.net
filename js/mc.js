@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const handleServerResponse = (data) => {
-    console.log('Response from server:', data); // Add this log to see the server response
+    console.log('Response from server:', data);
 
     try {
-      const parsedData = JSON.parse(data.body);
+      const parsedData = JSON.parse(data);
       if (parsedData && parsedData.status === 'start') {
         updateStatusText('Server started');
       } else if (parsedData && parsedData.status === 'stop') {
@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         method: 'GET',
       });
 
-      if (response.status === 200) {
-        const data = await response.json();
+      if (response.ok) {
+        const data = await response.text();
         handleServerResponse(data);
       } else {
         updateStatusText('Error communicating with server');
@@ -59,10 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      const data = await response.json();
-      console.log('Response from server:', data); // Add this log to see the server response
-
-      if (response.status === 200) {
+      if (response.ok) {
+        const data = await response.text();
+        console.log('Response from server:', data);
         handleServerResponse(data);
       } else {
         updateStatusText('Error communicating with server');
