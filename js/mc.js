@@ -6,7 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
 
   const updateStatusText = (text) => {
-    statusText.textContent = text;
+    let message;
+    try {
+      const json = JSON.parse(text);
+      message = json.message;
+    } catch (error) {
+      // If the provided text is not valid JSON, set the entire text as the message
+      message = text;
+    }
+    statusText.textContent = message;
   };
 
   const getStatusFromServer = async () => {
