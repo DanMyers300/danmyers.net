@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const statusText = document.getElementById('statusText');
 
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
-  const serverUrl = 'https://mc.danmyers.net';
 
   const updateStatusText = (text) => {
     statusText.textContent = text;
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const response = await fetch(apiUrl, {
         method: 'POST',
-        body: JSON.stringify({ action }), // Change 'ping' to 'start' or 'stop' when necessary
+        body: JSON.stringify({ action }),
         headers: {
           'Content-Type': 'application/json'
         }
