@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const parsedData = JSON.parse(data);
-      const message = parsedData.message;
+      const body = JSON.parse(parsedData.body);
 
-      if (message) {
-        updateStatusText(message);
+      if (body.message) {
+        updateStatusText(body.message);
       } else {
         updateStatusText('Unknown status');
       }
