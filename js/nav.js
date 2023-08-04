@@ -21,7 +21,8 @@ function openInNewPage(url) {
 
 document.addEventListener('DOMContentLoaded', function() {
   const root = document.documentElement;
- 
+  const themeToggleButton = document.querySelector('.tdnn');
+
   // Function to toggle the theme and save the state to localStorage
   function toggleTheme() {
     root.classList.toggle('dark-theme');
