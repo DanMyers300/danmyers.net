@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,11 +6,11 @@
     <link rel="stylesheet" href="../css/mc.css">
     <script src="../js/mc.js"></script>
 </head>
-  <body>
+<body>
     <div class="alert_wrapper">
-      <h2> Use </h2> 
-      <h1 id="serverUrl" style="font-size: 2em; text-decoration: underline;">mc.danmyers.net</h1>
-      <h2> to connect to the server</h2>
+        <h2> Use </h2>
+        <h1 id="serverUrl" style="font-size: 2em; text-decoration: underline;">mc.danmyers.net</h1>
+        <h2> to connect to the server</h2>
     </div>
     <!-- Main Section -->
     <div class="overlay"></div>
@@ -19,17 +18,17 @@
     <div class="starts2" aria-hidden="true"></div>
     <div class="stars3" aria-hidden="true"></div>
     <main class="main">
-	    <section class="contact">
-        <h1 class="title"><a style="text-decoration: none;" href="../index.html">DanMyers.net</a></h1>  
-        <button id="toggleButton" style="
-          padding: 3em;
-          background-color: lightgrey;
-          ">
-          Toggle Minecraft Server
-        </button>
-        <p id="statusText">
-          Click the button to start or stop the server.</p>
-      </section>
+        <section class="contact">
+            <h1 class="title"><a style="text-decoration: none;" href="../index.html">DanMyers.net</a></h1>
+            <!-- Toggle Switch -->
+            <label class="toggle-switch" for="serverToggle">
+                <input type="checkbox" id="serverToggle" />
+                <span class="slider"></span>
+            </label>
+            <p id="statusText">
+                Click the switch to start or stop the server.
+            </p>
+        </section>
     </main>
-  </body>
+</body>
 </html>

@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.getElementById('toggleButton');
+  const toggleButton = document.getElementById('serverToggle');
   const statusText = document.getElementById('statusText');
 
-  let action = 'start';
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
 
   const updateStatusText = (text) => {
@@ -19,14 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  toggleButton.addEventListener('click', async () => {
-    if (action === 'start') {
-      action = 'stop';
-    } else {
-      action = 'start';
-    }
-
-    updateStatusText('Loading');
+  toggleButton.addEventListener('change', async () => {
+    const action = toggleButton.checked ? 'start' : 'stop';
+    updateStatusText('Loading'); // Show "Loading" text while waiting for the API response
 
     try {
       const response = await fetch(apiUrl, {
