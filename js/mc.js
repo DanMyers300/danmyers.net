@@ -39,37 +39,35 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // Initial status check
-  try {
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      body: JSON.stringify({ action: 'checkServer' }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    if (response.ok) {
-      const data = await response.json();
-      const body = JSON.parse(data.body);
-      const status = body.status;
-      console.log(status)
-      if (status === 'running') {
+  const checkServerStatus = async () => {
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        body: JSON.stringify({ action: 'checkServer' }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      if (response.ok) {
+        const data = await response.json();
+        const body = JSON.parse(data.body);
+        const status = body.status;
         updateStatusText(`Server is ${status}`);
-      } else if (status === 'pending') {
-        updateStatusText('Server is starting');
-      } else if (status === 'stopping') {
-        updateStatusText('Server is stopping');  
+        updateToggleButton(status);
       } else {
-        updateStatusText('Server is down');
+        updateStatusText('Error checking server status');
       }
-      updateToggleButton(status);
-    } else {
-      updateStatusText('Error checking server status');
+    } catch (error) {
+      console.error('Error checking server status:', error);
+      updateStatusText('Currently not working');
     }
-  } catch (error) {
-    console.error('Error checking server status:', error);
-    updateStatusText('Currently not working');
-  }
+  };
+
+  // Initial status check
+  checkServerStatus();
+
+  // Periodically check server status every 10 seconds (adjust the interval as needed)
+  setInterval(checkServerStatus, 10000); // 10000 ms = 10 seconds
 
   toggleButton.addEventListener('change', () => {
     let action;
