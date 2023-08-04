@@ -49,9 +49,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       });
       if (response.ok) {
+        console.log("Checking Server Status")
         const data = await response.json();
         const body = JSON.parse(data.body);
         const status = body.status;
+        console.log(status)
         updateStatusText(`Server is ${status}`);
         updateToggleButton(status);
       } else {
