@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const body = JSON.parse(data.body);
         updateStatusText(body.message);
       } else {
-        updateStatusText('Error communicating with server');
+        const data = await response.json();
+        const body = JSON.parse(data.body);
+        updateStatusText(`Error: ${body.message}`);
       }
     } catch (error) {
       console.error('Error toggling EC2 instance:', error);
