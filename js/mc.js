@@ -1,4 +1,3 @@
-// Control the minecraft.danmyers.net server
 document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.getElementById('serverToggle');
   const statusText = document.getElementById('statusText');
@@ -6,37 +5,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
 
   const updateStatusText = (text) => {
-    let message;
-    try {
-      const json = JSON.parse(text);
-      message = json.message;
-    } catch (error) {
-      // If the provided text is not valid JSON, set the entire text as the message
-      message = text;
-    }
-    statusText.textContent = message;
+    statusText.textContent = text;
   };
 
-  const getStatusFromServer = async () => {
+  const checkServerStatus = async () => {
     try {
-      const response = await fetch(apiUrl, {
-        method: 'GET',
-      });
-
-      if (response.ok) {
-        const data = await response.text(); // Parse the response as text
-        console.log('Response Data:', data); // Add this line to see the response data
-        updateStatusText(data); // Display the response text as is
+      const response = await fetch('https://mc.danmyers.net');
+      if (response.status === 200) {
+        updateStatusText('Server online');
       } else {
-        updateStatusText('Error communicating with server');
+        updateStatusText('Server offline');
       }
     } catch (error) {
-      console.error('Error fetching server status:', error);
-      updateStatusText('Currently not working');
+      updateStatusText('Server offline');
     }
   };
 
-  getStatusFromServer();
+  checkServerStatus();
 
   toggleButton.addEventListener('change', async () => {
     const action = toggleButton.checked ? 'start' : 'stop';
@@ -52,9 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (response.ok) {
-        const data = await response.json(); // Parse the response as JSON
-        const body = JSON.parse(data.body); // Parse the "body" property as JSON
-        updateStatusText(body.message); // Update status text with the "message" part of the JSON
+        const data = await response.json();
+        const body = JSON.parse(data.body);
+        updateStatusText(body.message);
       } else {
         updateStatusText('Error communicating with server');
       }
