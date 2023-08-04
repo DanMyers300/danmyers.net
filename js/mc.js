@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   const updateToggleButton = (status) => {
-    toggleButton.checked = status === 'up';
+    toggleButton.checked = status === 'running';
   };
 
   const performAction = async (action) => {
