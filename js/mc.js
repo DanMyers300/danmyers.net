@@ -24,10 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       if (response.ok) {
-        const data = await response.json(); // Parse the response as JSON
+        const data = await response.text(); // Parse the response as text
         console.log('Response Data:', data); // Add this line to see the response data
-        const body = JSON.parse(data.body); // Parse the "body" property as JSON
-        updateStatusText(body.message); // Update status text with the "message" part of the JSON
+        updateStatusText(data); // Display the response text as is
       } else {
         updateStatusText('Error communicating with server');
       }
