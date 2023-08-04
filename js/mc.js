@@ -18,9 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  const getStatusFromServer = async () => {
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'GET',
+      });
+
+      if (response.status === 200) {
+        const data = await response.json();
+        handleServerResponse(data);
+      } else {
+        updateStatusText('Error communicating with server');
+      }
+    } catch (error) {
+      console.error('Error fetching server status:', error);
+      updateStatusText('Currently not working');
+    }
+  };
+
+  getStatusFromServer();
+
   toggleButton.addEventListener('change', async () => {
     const action = toggleButton.checked ? 'start' : 'stop';
-    updateStatusText('Loading'); // Show "Loading" text while waiting for the API response
+    updateStatusText('Loading');
 
     try {
       const response = await fetch(apiUrl, {
