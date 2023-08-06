@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-      Matrix
-    </title>
+    <title>Matrix</title>
     <style>
         * {margin: 0; padding: 0}
         body {background: #000;}
@@ -14,29 +12,40 @@
     <canvas></canvas>
     
     <script>
-        // Initialising the canvas
         var canvas = document.querySelector('canvas'),
             ctx = canvas.getContext('2d');
 
-        // Setting the width and height of the canvas
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            // Calculate the updated columns based on the new canvas width
+            columns = canvas.width / fontSize;
+            
+            // Reset the drops array to match the new number of columns
+            drops = [];
+            for (var i = 0; i < columns; i++) {
+                drops[i] = 1;
+            }
+        }
 
-        // Setting up the letters
+        // Call resizeCanvas when the window is resized
+        window.addEventListener('resize', resizeCanvas);
+
+        // Initialize canvas size
+        resizeCanvas();
+
         var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
         letters = letters.split('');
 
-        // Setting up the columns
         var fontSize = 10,
-            columns = canvas.width / fontSize;
+            columns = canvas.width / fontSize,
+            drops = [];
 
-        // Setting up the drops
-        var drops = [];
         for (var i = 0; i < columns; i++) {
             drops[i] = 1;
         }
 
-        // Setting up the draw function
         function draw() {
             ctx.fillStyle = 'rgba(0, 0, 0, .1)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -51,9 +60,7 @@
             }
         }
 
-        // Loop the animation
         setInterval(draw, 33);
     </script>
 </body>
 </html>
-
