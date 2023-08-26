@@ -3,12 +3,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   const statusText = document.getElementById('statusText');
 
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
+  const correctPassword = 'abracadabra';
 
   const updateStatusText = (text) => {
     statusText.textContent = text;
-  };
-  const updateToggleButton = (status) => {
-    toggleButton.checked = status === 'running' || status === 'pending';
   };
 
   const performAction = async (action) => {
@@ -64,16 +62,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
+  const updateToggleButton = (status) => {
+    toggleButton.checked = status === 'running' || status === 'pending';
+  };
+
   checkServerStatus();
 
   setInterval(checkServerStatus, 10000);
-  toggleButton.addEventListener('change', () => {
+
+  toggleButton.addEventListener('change', async () => {
     let action;
     if (toggleButton.checked) {
       action = 'start';
+      performAction(action);
     } else {
-      action = 'stop';
+      const password = prompt('Enter password to toggle the button off:');
+      if (password === correctPassword) {
+        action = 'stop';
+        performAction(action);
+      } else {
+        toggleButton.checked = true; // Prevent toggling off if password is incorrect
+      }
     }
-    performAction(action);
   });
 });
