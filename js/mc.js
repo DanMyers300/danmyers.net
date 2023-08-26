@@ -1,23 +1,26 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const toggleButton = document.getElementById('serverToggle');
   const statusText = document.getElementById('statusText');
+  const passwordInput = document.getElementById('passwordInput');
+  const passwordButton = document.getElementById('passwordButton');
 
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
 
   const updateStatusText = (text) => {
     statusText.textContent = text;
   };
+
   const updateToggleButton = (status) => {
     toggleButton.checked = status === 'running' || status === 'pending';
   };
 
-  const performAction = async (action) => {
+  const performAction = async (action, password) => {
     updateStatusText('Loading');
 
     try {
       const response = await fetch(apiUrl, {
         method: 'POST',
-        body: JSON.stringify({ action }),
+        body: JSON.stringify({ action, password }),
         headers: {
           'Content-Type': 'application/json'
         }
@@ -47,12 +50,13 @@ document.addEventListener('DOMContentLoaded', async () => {
           'Content-Type': 'application/json'
         }
       });
+      
       if (response.ok) {
-        console.log("Checking Server Status")
+        console.log("Checking Server Status");
         const data = await response.json();
         const body = JSON.parse(data.body);
         const status = body.status;
-        console.log(status)
+        console.log(status);
         updateStatusText(`Server is ${status}`);
         updateToggleButton(status);
       } else {
@@ -67,6 +71,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   checkServerStatus();
 
   setInterval(checkServerStatus, 10000);
+
+  passwordButton.addEventListener('click', () => {
+    const password = passwordInput.value.trim();
+    if (password === "abracadabra") {
+      performAction('stop', password);
+    } else {
+      updateStatusText('Incorrect password');
+    }
+  });
+
   toggleButton.addEventListener('change', () => {
     let action;
     if (toggleButton.checked) {
