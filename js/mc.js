@@ -64,16 +64,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
+  const closeServerWithPassword = () => {
+    const password = prompt("Enter the password to close the server:");
+    if (password === "abracadabra") {
+      performAction("stop");
+    } else {
+      updateStatusText("Incorrect password");
+    }
+  };
+
   checkServerStatus();
 
   setInterval(checkServerStatus, 10000);
   toggleButton.addEventListener('change', () => {
-    let action;
     if (toggleButton.checked) {
-      action = 'start';
+      closeServerWithPassword();
     } else {
-      action = 'stop';
+      performAction('start');
     }
-    performAction(action);
   });
 });
