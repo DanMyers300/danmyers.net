@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const statusText = document.getElementById('statusText');
 
   const apiUrl = 'https://z180pb1pd3.execute-api.us-east-1.amazonaws.com/Prod/mc_start_stop';
+    // Clear text password
   const correctPassword = 'abracadabra';
 
   const updateStatusText = (text) => {
