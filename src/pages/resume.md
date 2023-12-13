@@ -22,13 +22,19 @@ Experience
 **Musework LLC:** *Freelance Developer* </br> 07/2022 - 08/2023
 
 * AWS Chatbot Development for Waterloo-Greenway Conservancy:
-    * During my tenure at Musework LLC, I undertook a pivotal role in enhancing the visitor experience at the Waterloo-Greenway Conservancy through the creation of an AWS chatbot. Leveraging AWS Lex, I designed and implemented an innovative solution that enabled patrons to engage with the museum via text messages. My responsibilities included ensuring a cost-effective approach, adhering to state and federal regulations governing text messages, and serving as the sole developer for the project. This initiative not only enriched the museum's interaction with its audience but also demonstrated my proficiency in AWS services and commitment to regulatory compliance.
+    * Enhanced visitor experience through an AWS chatbot using AWS Lex.
+    * Ensured cost-effectiveness and regulatory compliance for text messages.
+    * Sole developer for the project, showcasing proficiency in AWS services.
 
 * NextJS Component Design for TXDOT Education Website:
-    * As a valued contributor to Musework LLC, I spearheaded the design of multiple NextJS components for an education website commissioned by the Texas Department of Transportation (TXDOT). Focused on educating visitors about the Paleoindian period of Texas, these components were instrumental in delivering engaging and informative content. My role encompassed the end-to-end design process, ensuring seamless integration with the TXDOT website. This project showcased my ability to create user-centric solutions and contribute to educational initiatives through cutting-edge web development.
+    * Spearheaded design of NextJS components for TXDOT's education website.
+    * Focused on the Paleoindian period of Texas, delivering engaging and informative content.
+    * Demonstrated user-centric solutions and seamless integration with the TXDOT website.
 
 * Technical Consulting Expertise:
-    * In addition to my specific project contributions, I played a vital role in offering technical consultancy services across various initiatives at Musework LLC. My expertise was sought in matters ranging from technology selection to strategic decision-making. Collaborating with diverse teams, I provided insights and recommendations that aligned with industry best practices, fostering a culture of innovation and technical excellence within the organization. My consultancy contributions underscore my versatility and commitment to advancing Musework LLC's mission in the museum and education sector.
+    * Played a vital role in providing technical consultancy services at Musework LLC.
+    * Offered insights and recommendations across various initiatives.
+    * Contributed to a culture of innovation and technical excellence within the organization.
 
 **Emler Swim School:** *Team Manager* </br> 02/2021 - 03/2023
 
@@ -58,6 +64,7 @@ Key Accomplishments:
 
 * Resource-Augmented Document Generation:
     * Pioneered resource-augmented document generation by feeding documents from the database into the Language Model Server, enhancing content quality and diversity.
+    
 * Solo Development and Full Stack Mastery:
     * Demonstrated autonomy and a comprehensive skill set as the sole Full Stack Developer, handling containerization, application logic, and ensuring a cohesive and efficient system.
 
