@@ -1,0 +1,19 @@
+{
+  "name": "danmyers.net",
+  "version": "1.0.0",
+  "description": "danmyers.net personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanMyers300/danmyers.net.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanMyers300/danmyers.net/issues"
+  },
+  "homepage": "https://github.com/DanMyers300/danmyers.net#readme"
+}
