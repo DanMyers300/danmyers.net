@@ -1,6 +1,6 @@
 const resumeData = require('./resume.json');
 
-export const handler = async (event) => {
+ exports.handler = async (event) => {
   try {
     // Construct the response
     const response = {
