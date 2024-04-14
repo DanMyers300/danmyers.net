@@ -31,3 +31,4 @@ jobs:
           aws_region: us-east-1
           function_name: Resume
           zip_file: bundle.zip
+          source: api/lambda/
