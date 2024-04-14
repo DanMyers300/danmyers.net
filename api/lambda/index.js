@@ -1,26 +1,19 @@
-const fetch = require('node-fetch');
+import { getResumeData } from './resume.js';
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   try {
-    // Fetch the raw content of the resume.js file from the GitHub repository
-    const response = await fetch('https://raw.githubusercontent.com/DanMyers300/danmyers.net/main/api/lambda/resume.js');
-    
-    if (!response.ok) {
-      throw new Error('Failed to fetch resume data');
-    }
-    
-    const resumeData = await response.text();
+    // Get the resume data
+    const resumeData = await getResumeData();
 
     // Construct the response
-    const responseBody = JSON.stringify({ resumeData });
-
-    return {
+    const response = {
       statusCode: 200,
-      body: responseBody
+      body: JSON.stringify(resumeData)
     };
+
+    return response;
   } catch (error) {
     // Handle errors
-    console.error('Error fetching resume data:', error);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: 'Internal Server Error' })
