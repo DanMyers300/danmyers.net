@@ -19,6 +19,8 @@ jobs:
           npm run build --if-present
         env:
           CI: true
+      - name: List files in directory
+        run: ls -la api
       - name: zip
         uses: montudor/action-zip@v0.1.0
         with:
