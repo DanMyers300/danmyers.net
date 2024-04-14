@@ -1,4 +1,4 @@
-import { getResumeData } from './resume.js';
+import resumeData from './resume.js';
 
 export const handler = async (event) => {
   try {
