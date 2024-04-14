@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume Display</title>
+</head>
+<body>
+
+<h1>Resume Information</h1>
+
+<div id="resumeData">
+  <!-- Resume data will be displayed here -->
+</div>
+
+<script>
+window.onload = function() {
+  // Make an AJAX request to the API endpoint
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://kvbszdkbed.execute-api.us-east-1.amazonaws.com/resume", true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      // If the request is successful, parse and display the response
+      var responseData = JSON.parse(xhr.responseText);
+      displayResumeData(responseData);
+    } else if (xhr.readyState === 4 && xhr.status !== 200) {
+      // If there's an error, display an error message
+      document.getElementById("resumeData").innerHTML = "Failed to fetch resume data. Please try again later.";
+    }
+  };
+  xhr.send();
+};
+
+// Function to display the resume data on the page
+function displayResumeData(data) {
+  var resumeDiv = document.getElementById("resumeData");
+  var resumeHTML = "<h2>Name: " + data.name + "</h2>";
+  resumeHTML += "<p>Email: " + data.email + "</p>";
+  resumeHTML += "<p>Education: " + data.education + "</p>";
+  resumeHTML += "<p>Experience: " + data.experience + "</p>";
+  resumeHTML += "<p>Skills: " + data.skills + "</p>";
+  // Add more fields as needed
+  resumeDiv.innerHTML = resumeHTML;
+}
+</script>
+
+</body>
+</html>
