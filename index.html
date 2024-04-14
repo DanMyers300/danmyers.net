@@ -9,25 +9,32 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
   }
   h1, h2, h3 {
     color: #333;
+    text-align: center;
   }
   #resumeData {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  #resumeData p {
-    margin: 5px 0;
+  p {
+    margin: 10px 0;
   }
-  #resumeData a {
+  a {
     color: #007bff;
+    text-decoration: none;
   }
-  #resumeData ul {
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    margin: 10px 0;
     padding-left: 20px;
   }
 </style>
@@ -37,28 +44,23 @@
 <h1>Resume Information</h1>
 
 <div id="resumeData">
-  <!-- Resume data will be displayed here -->
 </div>
 
 <script>
 window.onload = function() {
-  // Make an AJAX request to the API endpoint
   var xhr = new XMLHttpRequest();
   xhr.open("GET", "https://kvbszdkbed.execute-api.us-east-1.amazonaws.com/resume", true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
-      // If the request is successful, parse and display the response
       var responseData = JSON.parse(xhr.responseText);
       displayResumeData(responseData.resume);
     } else if (xhr.readyState === 4 && xhr.status !== 200) {
-      // If there's an error, display an error message
       document.getElementById("resumeData").innerHTML = "Failed to fetch resume data. Please try again later.";
     }
   };
   xhr.send();
 };
 
-// Function to display the resume data on the page
 function displayResumeData(resumeData) {
   var resumeDiv = document.getElementById("resumeData");
   var resumeHTML = "<h2>Name: " + resumeData.basics.name + "</h2>";
