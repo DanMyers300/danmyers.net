@@ -1,4 +1,4 @@
-import resumeData from './resume.js';
+const resumeData = require('./resume.js');
 
 const handler = async (event) => {
   try {
