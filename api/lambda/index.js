@@ -5,7 +5,7 @@ const resumeData = require('./resume.json');
     // Construct the response
     const response = {
       statusCode: 200,
-      body: JSON.stringify(resumeData)
+      body: resumeData
     };
 
     return response;
