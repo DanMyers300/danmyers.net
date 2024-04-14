@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resume Display</title>
+<title>Resume Information</title>
 </head>
 <body>
 
@@ -22,7 +22,7 @@ window.onload = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
       // If the request is successful, parse and display the response
       var responseData = JSON.parse(xhr.responseText);
-      displayResumeData(responseData);
+      displayResumeData(responseData.resume);
     } else if (xhr.readyState === 4 && xhr.status !== 200) {
       // If there's an error, display an error message
       document.getElementById("resumeData").innerHTML = "Failed to fetch resume data. Please try again later.";
@@ -32,14 +32,37 @@ window.onload = function() {
 };
 
 // Function to display the resume data on the page
-function displayResumeData(data) {
+function displayResumeData(resumeData) {
   var resumeDiv = document.getElementById("resumeData");
-  var resumeHTML = "<h2>Name: " + data.Basics.name + "</h2>";
-  resumeHTML += "<p>Email: " + data.email + "</p>";
-  resumeHTML += "<p>Education: " + data.education + "</p>";
-  resumeHTML += "<p>Experience: " + data.experience + "</p>";
-  resumeHTML += "<p>Skills: " + data.skills + "</p>";
-  // Add more fields as needed
+  var resumeHTML = "<h2>Name: " + resumeData.basics.name + "</h2>";
+  resumeHTML += "<p>Label: " + resumeData.basics.label + "</p>";
+  resumeHTML += "<p>Email: " + resumeData.basics.email + "</p>";
+  resumeHTML += "<p>Phone: " + resumeData.basics.phone + "</p>";
+  resumeHTML += "<p>URL: <a href='" + resumeData.basics.url + "'>" + resumeData.basics.url + "</a></p>";
+  resumeHTML += "<p>Summary: " + resumeData.basics.summary + "</p>";
+  resumeHTML += "<p>Location: " + resumeData.basics.location.city + ", " + resumeData.basics.location.region + ", " + resumeData.basics.location.countryCode + " " + resumeData.basics.location.postalCode + "</p>";
+
+  resumeHTML += "<h3>Work Experience</h3>";
+  resumeData.work.forEach(function(work) {
+    resumeHTML += "<p><strong>" + work.name + "</strong></p>";
+    resumeHTML += "<p>Position: " + work.position + "</p>";
+    resumeHTML += "<p>URL: <a href='" + work.url + "'>" + work.url + "</a></p>";
+    resumeHTML += "<p>Start Date: " + work.startDate + "</p>";
+    resumeHTML += "<p>End Date: " + work.endDate + "</p>";
+    resumeHTML += "<p>Summary: " + work.summary + "</p>";
+    resumeHTML += "<p>Highlights: <ul>";
+    work.highlights.forEach(function(highlight) {
+      resumeHTML += "<li>" + highlight + "</li>";
+    });
+    resumeHTML += "</ul></p>";
+  });
+
+  resumeHTML += "<h3>Interests</h3>";
+  resumeData.interests.forEach(function(interest) {
+    resumeHTML += "<p><strong>" + interest.name + "</strong></p>";
+    resumeHTML += "<p>Keywords: " + interest.keywords.join(", ") + "</p>";
+  });
+
   resumeDiv.innerHTML = resumeHTML;
 }
 </script>
