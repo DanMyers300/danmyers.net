@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DanMyers300/danmyers.net/issues"
   },
-  "homepage": "https://github.com/DanMyers300/danmyers.net#readme"
+  "homepage": "https://github.com/DanMyers300/danmyers.net#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
 }
