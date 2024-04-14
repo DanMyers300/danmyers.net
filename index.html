@@ -54,7 +54,11 @@ window.onload = function() {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
         var responseData = JSON.parse(xhr.responseText);
-        displayResumeData(responseData.resumeData);
+        if (responseData && responseData.resumeData) {
+          displayResumeData(responseData.resumeData);
+        } else {
+          document.getElementById("resumeData").innerHTML = "Resume data is not available.";
+        }
       } else {
         document.getElementById("resumeData").innerHTML = "Failed to fetch resume data. Please try again later.";
       }
