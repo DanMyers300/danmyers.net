@@ -1,4 +1,4 @@
-export const resumeData = {
+const resumeData = {
   basics: {
     "name": "Daniel Myers",
     "label": "Software Engineer",
@@ -34,3 +34,5 @@ export const resumeData = {
     ]
   }]
 };
+
+module.exports = resumeData;
