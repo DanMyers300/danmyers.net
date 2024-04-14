@@ -1,4 +1,4 @@
-const resumeData = require('./resume.js');
+const resumeData = require('./resume.json');
 
 const handler = async (event) => {
   try {
