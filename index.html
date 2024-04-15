@@ -72,12 +72,11 @@
       
       // Basic Information
       resumeHTML += "<h2>" + resumeData.basics.name + "</h2>";
-      resumeHTML += "<p>Label: " + resumeData.basics.label + "</p>";
+      resumeHTML += "<h3>" + resumeData.basics.label + "</h3>";
       resumeHTML += "<p>Email: " + resumeData.basics.email + "</p>";
       resumeHTML += "<p>Phone: " + resumeData.basics.phone + "</p>";
-      resumeHTML += "<p>URL: <a href='" + resumeData.basics.url + "'>" + resumeData.basics.url + "</a></p>";
+      resumeHTML += "<p>Location: " + resumeData.basics.location.city + ", " + resumeData.basics.location.region + "</p>";
       resumeHTML += "<p>Summary: " + resumeData.basics.summary + "</p>";
-      resumeHTML += "<p>Location: " + resumeData.basics.location.city + ", " + resumeData.basics.location.region + ", " + resumeData.basics.location.countryCode + " " + resumeData.basics.location.postalCode + "</p>";
 
       // Work Experience
       resumeHTML += "<h3>Work Experience</h3>";

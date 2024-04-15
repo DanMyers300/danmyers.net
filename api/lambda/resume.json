@@ -5,13 +5,10 @@
       "label": "Software Engineer",
       "email": "contact@danmyers.net",
       "phone": "(469) 847-9401",
-      "url": "https://danmyers.net",
       "summary": "Versatile full-stack developer",
       "location": {
         "postalCode": "75081",
-        "city": "Richardson",
-        "countryCode": "US",
-        "region": "Texas"
+        "city": "Richardson"
       }
     },
     "work": [
