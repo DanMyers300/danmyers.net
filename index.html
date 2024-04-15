@@ -78,6 +78,8 @@
     {{/each}}
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
+
   <script>
     window.onload = function() {
       fetchResumeData();
@@ -103,9 +105,6 @@
       resumeDiv.innerHTML = Mustache.render(resumeTemplate, resumeData);
     }
   </script>
-
-  <!-- Include Mustache.js library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
 
 </body>
 </html>
