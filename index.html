@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resume Information</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  h1, h2, h3 {
-    color: #333;
-    text-align: center;
-  }
-  #resumeData {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  p {
-    margin: 10px 0;
-  }
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  ul {
-    margin: 10px 0;
-    padding-left: 20px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    h1, h2, h3 {
+      color: #333;
+      text-align: center;
+    }
+    #resumeData {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      margin: 10px 0;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Resume Information</h1>
+  <h1>Resume Information</h1>
 
-<div id="resumeData">
-</div>
+  <div id="resumeData">
+    <p>Loading...</p>
+  </div>
 
-<script>
-window.onload = function() {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.danmyers.net", true);
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        var responseData = JSON.parse(xhr.responseText);
-        if (responseData && responseData.body && responseData.body.resumeData) {
-          displayResumeData(responseData.body.resumeData);
-        } else {
-          document.getElementById("resumeData").innerHTML = "Resume data is not available.";
-        }
-      } else {
-        document.getElementById("resumeData").innerHTML = "Failed to fetch resume data. Please try again later.";
-      }
+  <script id="resumeTemplate" type="text/template">
+    <h2>Name: {{name}}</h2>
+    <p>Label: {{label}}</p>
+    <p>Email: {{email}}</p>
+    <p>Phone: {{phone}}</p>
+    <p>URL: <a href="{{url}}">{{url}}</a></p>
+    <p>Summary: {{summary}}</p>
+    <p>Location: {{location.city}}, {{location.region}}, {{location.countryCode}} {{location.postalCode}}</p>
+
+    <h3>Work Experience</h3>
+    {{#each work}}
+      <p><strong>{{name}}</strong></p>
+      <p>Position: {{position}}</p>
+      <p>URL: <a href="{{url}}">{{url}}</a></p>
+      <p>Start Date: {{startDate}}</p>
+      <p>End Date: {{endDate}}</p>
+      <p>Summary: {{summary}}</p>
+      <p>Highlights: <ul>
+      {{#each highlights}}
+        <li>{{this}}</li>
+      {{/each}}
+      </ul></p>
+    {{/each}}
+
+    <h3>Interests</h3>
+    {{#each interests}}
+      <p><strong>{{name}}</strong></p>
+      <p>Keywords: {{keywords.join ", "}}</p>
+    {{/each}}
+  </script>
+
+  <script>
+    window.onload = function() {
+      fetchResumeData();
+    };
+
+    function fetchResumeData() {
+      fetch("https://api.danmyers.net")
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Failed to fetch resume data.");
+          }
+          return response.json();
+        })
+        .then(data => displayResumeData(data.body.resumeData))
+        .catch(error => {
+          document.getElementById("resumeData").innerHTML = "<p>" + error.message + "</p>";
+        });
     }
-  };
-  xhr.send();
-};
 
-function displayResumeData(resumeData) {
-  var resumeDiv = document.getElementById("resumeData");
-  var resumeHTML = "<h2>Name: " + resumeData.basics.name + "</h2>";
-  resumeHTML += "<p>Label: " + resumeData.basics.label + "</p>";
-  resumeHTML += "<p>Email: " + resumeData.basics.email + "</p>";
-  resumeHTML += "<p>Phone: " + resumeData.basics.phone + "</p>";
-  resumeHTML += "<p>URL: <a href='" + resumeData.basics.url + "'>" + resumeData.basics.url + "</a></p>";
-  resumeHTML += "<p>Summary: " + resumeData.basics.summary + "</p>";
-  resumeHTML += "<p>Location: " + resumeData.basics.location.city + ", " + resumeData.basics.location.region + ", " + resumeData.basics.location.countryCode + " " + resumeData.basics.location.postalCode + "</p>";
+    function displayResumeData(resumeData) {
+      var resumeTemplate = document.getElementById("resumeTemplate").innerHTML;
+      var resumeDiv = document.getElementById("resumeData");
+      resumeDiv.innerHTML = Mustache.render(resumeTemplate, resumeData);
+    }
+  </script>
 
-  resumeHTML += "<h3>Work Experience</h3>";
-  resumeData.work.forEach(function(work) {
-    resumeHTML += "<p><strong>" + work.name + "</strong></p>";
-    resumeHTML += "<p>Position: " + work.position + "</p>";
-    resumeHTML += "<p>URL: <a href='" + work.url + "'>" + work.url + "</a></p>";
-    resumeHTML += "<p>Start Date: " + work.startDate + "</p>";
-    resumeHTML += "<p>End Date: " + work.endDate + "</p>";
-    resumeHTML += "<p>Summary: " + work.summary + "</p>";
-    resumeHTML += "<p>Highlights: <ul>";
-    work.highlights.forEach(function(highlight) {
-      resumeHTML += "<li>" + highlight + "</li>";
-    });
-    resumeHTML += "</ul></p>";
-  });
-
-  resumeHTML += "<h3>Interests</h3>";
-  resumeData.interests.forEach(function(interest) {
-    resumeHTML += "<p><strong>" + interest.name + "</strong></p>";
-    resumeHTML += "<p>Keywords: " + interest.keywords.join(", ") + "</p>";
-  });
-
-  resumeDiv.innerHTML = resumeHTML;
-}
-</script>
+  <!-- Include Mustache.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
 
 </body>
 </html>
