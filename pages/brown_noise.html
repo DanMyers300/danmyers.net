@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body>
-    <figure>
-      <figcaption>Brown Noise:</figcaption>
-      <audio id="brownNoise" controls loop>
-        <source src="https://ia802803.us.archive.org/30/items/7.superdeepstretchedbrownnoise1/10.432hz%20Deep%20Brown%20Noise%20in%20HD%20Stereo-1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </figure>
+<head>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var audio = document.getElementById('brownNoise');
-        audio.muted = true; // Mute the audio initially
-        audio.play(); // Attempt to play the audio
-        
-        // Unmute the audio after a short delay
-        setTimeout(function() {
-          audio.muted = false;
-        }, 100);
-      });
-    </script>
-  </body>
+    figure {
+      text-align: center;
+    }
+
+    figcaption {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <figure>
+    <figcaption>Brown Noise</figcaption>
+    <audio id="brownNoise" controls loop>
+      <source src="https://ia802803.us.archive.org/30/items/7.superdeepstretchedbrownnoise1/10.432hz%20Deep%20Brown%20Noise%20in%20HD%20Stereo-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </figure>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var audio = document.getElementById('brownNoise');
+      audio.muted = true; // Mute the audio initially
+      audio.play(); // Attempt to play the audio
+      
+      // Unmute the audio after a short delay
+      setTimeout(function() {
+        audio.muted = false;
+      }, 100);
+    });
+  </script>
+</body>
 </html>
