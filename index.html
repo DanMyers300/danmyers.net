@@ -4,20 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dan Myers</title>
-  <link rel="stylesheet" href="./style/global.css">
-  <script src="./src/main.js"></script>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .container {
+      margin-top: 100px;
+      padding: 20px;
+    }
+
     .centered {
       text-align: center;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
       text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
     }
   </style>
 </head>
 <body>
-  <h1>Home Page</h1>
 
+<header>
   <div class="centered">
-    <a href="./pages/resume.html">Resume</a>
+    <h1>Dan Myers</h1>
+    <div class="dropdown">
+      <span>Pages &#9662;</span>
+      <div class="dropdown-content">
+        <a href="./pages/resume.html">Resume</a>
+      </div>
+    </div>
   </div>
+</header>
+
 </body>
 </html>
