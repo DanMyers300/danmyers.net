@@ -4,12 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Headers - 16</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
-      let navToggle = document.querySelector(".nav__toggle");
-      let navWrapper = document.querySelector(".nav__wrapper");
+      let navToggle = document.querySelector(".navToggle");
+      let navWrapper = document.querySelector(".navWrapper");
       
       navToggle.addEventListener("click", function () {
         if (navWrapper.classList.contains("active")) {
@@ -24,6 +21,8 @@
       });
     </script>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
       /* Reset CSS */
       html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
         margin: 0;
@@ -60,17 +59,17 @@
         font-size: 20px;
       }
 
-      .site-header {
+      .siteHeader {
         position: relative;
         background-color: #def7ff;
       }
 
-      .site-header__wrapper {
+      .siteHeaderWrapper {
         padding-top: 1rem;
         padding-bottom: 1rem;
       }
       @media (min-width: 600px) {
-        .site-header__wrapper {
+        .siteHeaderWrapper {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -81,13 +80,13 @@
 
       /* Navigation Styles */
       @media (min-width: 600px) {
-        .nav__wrapper {
+        .navWrapper {
           display: flex;
         }
       }
 
       @media (max-width: 599px) {
-        .nav__wrapper {
+        .navWrapper {
           position: absolute;
           top: 100%;
           right: 0;
@@ -99,7 +98,7 @@
           transform: translateY(-20px); /* Start slightly above */
           transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s ease-out; /* Animate opacity, transform, and visibility */
         }
-        .nav__wrapper.active {
+        .navWrapper.active {
           visibility: visible; /* Make it visible */
           opacity: 1; /* Fully opaque */
           transform: translateY(0); /* Slide down to final position */
@@ -107,26 +106,26 @@
       }
 
       @media (min-width: 600px) {
-        .nav__item:first-child a {
+        .navItem:first-child a {
           border-left: 1px solid #b5b5b5;
         }
       }
 
-      .nav__item a {
+      .navItem a {
         display: block;
         padding: 1.5rem 1rem;
       }
       @media (min-width: 600px) {
-        .nav__item a {
+        .navItem a {
           border-right: 1px solid #b5b5b5;
         }
       }
 
-      .nav__toggle {
+      .navToggle {
         display: none;
       }
       @media (max-width: 599px) {
-        .nav__toggle {
+        .navToggle {
           display: block;
           position: absolute;
           right: 1rem;
@@ -135,8 +134,6 @@
       }
 
       /* Global Styles */
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
       .wrapper {
         max-width: 1140px;
         padding-left: 1rem;
@@ -163,7 +160,7 @@
         font-family: "Roboto", sans-serif;
       }
 
-      .sr-only {
+      .srOnly {
         position: absolute;
         clip: rect(1px, 1px, 1px, 1px);
         padding: 0;
@@ -202,26 +199,24 @@
         }
       }
 
-      .button--icon {
+      buttonIcon {
         min-width: initial;
         padding: 0.5rem;
       }
     </style>
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrapper site-header__wrapper">
-        <a href="#" class="brand">Brand</a>
+    <header class="siteHeader">
+      <div class="wrapper siteHeaderWrapper">
+        <a href="/" class="brand">Dan</a>
         <nav class="nav">
-          <button class="nav__toggle" aria-expanded="false" type="button">
+          <button class="navToggle" aria-expanded="false" type="button">
             menu
           </button>
-          <ul class="nav__wrapper">
-            <li class="nav__item"><a href="#">Home</a></li>
-            <li class="nav__item"><a href="#">About</a></li>
-            <li class="nav__item"><a href="#">Services</a></li>
-            <li class="nav__item"><a href="#">Hire us</a></li>
-            <li class="nav__item"><a href="#">Contact</a></li>
+          <ul class="navWrapper">
+            <li class="navItem"><a href="/">Home</a></li>
+	    <li class="navItem"><a href="/about">About</a></li>
+	    <li class="navItem"><a href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
