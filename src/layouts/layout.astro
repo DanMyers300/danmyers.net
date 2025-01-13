@@ -1,6 +1,5 @@
 ---
 import Header from '../components/header.astro';
-import Footer from '../components/footer.astro'
 ---
 <!doctype html>
 <html lang="en">
@@ -13,7 +12,6 @@ import Footer from '../components/footer.astro'
     <body>
         <Header />
         <slot />
-        <Footer />
     </body>
 </html>
 
@@ -23,5 +21,8 @@ import Footer from '../components/footer.astro'
         margin: 0;
         width: 100%;
         height: 100%;
+        background-color: #031725; /* Set the background color */
+        color: #b4bbc2; /* Set the text color */
+        font-family: Arial, sans-serif; /* Optional: Set a default font */
     }
 </style>
