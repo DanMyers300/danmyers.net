@@ -1,3 +1,7 @@
+---
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro'
+---
 <!doctype html>
 <html lang="en">
     <head>
@@ -7,7 +11,9 @@
         <title>Dan Myers</title>
     </head>
     <body>
+        <Header />
         <slot />
+        <Footer />
     </body>
 </html>
 
