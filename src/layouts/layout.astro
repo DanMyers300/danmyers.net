@@ -1,7 +1,6 @@
 ---
 import Header from '../components/header.astro';
 ---
-<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -11,18 +10,32 @@ import Header from '../components/header.astro';
     </head>
     <body>
         <Header />
-        <slot />
+        <main>
+            <slot />
+        </main>
     </body>
 </html>
 
 <style>
+    :root {
+        --header-height: 300px;
+    }
+
     html,
     body {
         margin: 0;
         width: 100%;
         height: 100%;
-        background-color: #031725; /* Set the background color */
-        color: #b4bbc2; /* Set the text color */
-        font-family: Arial, sans-serif; /* Optional: Set a default font */
+        background-color: #031725;
+        color: #b4bbc2;
+        font-family: Arial, sans-serif;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - var(--header-height));
     }
 </style>
