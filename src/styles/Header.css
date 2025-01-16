@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.siteHeader {
+  position: relative;
+  background-color: #162b3b;
+}
+
+.siteHeaderWrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 600px) {
+  .siteHeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .navWrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 599px) {
+  .navWrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #162b3b;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s ease-out;
+  }
+  .navWrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 600px) {
+  .navItem:first-child a {
+    border-left: 1px solid #b5b5b5;
+  }
+}
+
+.navItem a {
+  display: block;
+  padding: 1.5rem 1rem;
+}
+@media (min-width: 600px) {
+  .navItem a {
+    border-right: 1px solid #b5b5b5;
+  }
+}
+
+.navToggle {
+  display: none;
+}
+@media (max-width: 599px) {
+  .navToggle {
+    background-color: #162b3b;
+    color: #b4bbc2;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+.wrapper {
+  max-width: 1140px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #b4bbc2;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.srOnly {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #fff;
+  background-color: #2fa0f6;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.button span {
+  display: none;
+}
+@media (min-width: 600px) {
+  .button span {
+    display: initial;
+  }
+}
+
+buttonIcon {
+  min-width: initial;
+  padding: 0.5rem;
+}
+
+/* Hamburger Menu Icon */
+.navToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: none; /* Hide by default */
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  width: 24px;
+  height: 2px;
+  background-color: #fff; /* White color */
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: #fff; /* White color */
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+  top: -6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
+/* Active state for the hamburger menu */
+.navToggle[aria-expanded="true"] .hamburger {
+  background-color: transparent;
+}
+
+.navToggle[aria-expanded="true"] .hamburger::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.navToggle[aria-expanded="true"] .hamburger::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Show the hamburger menu only on smaller screens */
+@media (max-width: 768px) {
+  .navToggle {
+    display: flex; /* Show the hamburger menu */
+  }
+
+  .navWrapper {
+    display: none; /* Hide the nav links by default on mobile */
+  }
+
+  .navWrapper.active {
+    display: flex; /* Show the nav links when the menu is active */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Background color for the dropdown */
+    padding: 10px 0;
+  }
+
+  .navItem {
+    margin: 10px 0;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .navWrapper {
+    display: flex; /* Show the nav links on desktop */
+    gap: 20px; /* Adjust spacing between nav items */
+  }
+}
