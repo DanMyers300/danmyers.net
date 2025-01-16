@@ -22,6 +22,19 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  const menuItems = [
+    { title: 'about', href: '/about' },
+    { title: 'contact', href: '/contact' }
+  ];
+
+  const listMenuItems = menuItems.map((item, index) => (
+    <li key={index} className="navItem">
+      <a href={item.href}>
+        {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
+      </a>
+    </li>
+  ));
+
   return (
     <header className="siteHeader">
       <div className="wrapper siteHeaderWrapper">
@@ -38,12 +51,7 @@ const Header: React.FC = () => {
             <span className="hamburger"></span>
           </button>
           <ul ref={navWrapperRef} className="navWrapper">
-            <li className="navItem">
-              <a href="/about">About</a>
-            </li>
-            <li className="navItem">
-              <a href="/contact">Contact</a>
-            </li>
+            {listMenuItems}
           </ul>
         </nav>
       </div>
