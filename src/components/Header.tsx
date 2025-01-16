@@ -9,23 +9,17 @@ const Header: React.FC = () => {
     const navToggle = navToggleRef.current;
     const navWrapper = navWrapperRef.current;
 
-    if (navToggle && navWrapper) {
-      const handleClick = () => {
-        if (navWrapper.classList.contains('active')) {
-          navToggle.setAttribute('aria-expanded', 'false');
-          navWrapper.classList.remove('active');
-        } else {
-          navWrapper.classList.add('active');
-          navToggle.setAttribute('aria-expanded', 'true');
-        }
-      };
+    const handleClick = () => {
+      const isActive = navWrapper?.classList.contains('active');
+      navToggle?.setAttribute('aria-expanded', String(!isActive));
+      navWrapper?.classList.toggle('active');
+    };
 
-      navToggle.addEventListener('click', handleClick);
+    navToggle?.addEventListener('click', handleClick);
 
-      return () => {
-        navToggle.removeEventListener('click', handleClick);
-      };
-    }
+    return () => {
+      navToggle?.removeEventListener('click', handleClick);
+    };
   }, []);
 
   return (

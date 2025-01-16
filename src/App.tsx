@@ -4,10 +4,10 @@ import './App.css'
 
 function App() {
   return (
-    <>
-    <Header />
-    <Home />
-    </>
+    <body>
+      <Header />
+      <Home />
+    </body>
   )
 }
 
