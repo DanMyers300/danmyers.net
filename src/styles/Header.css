@@ -42,7 +42,6 @@ body {
   margin-right: auto;
 }
 
-/* Header Styles */
 .siteHeader {
   position: relative;
   background-color: #162b3b;
@@ -71,11 +70,10 @@ body {
   text-decoration: none;
 }
 
-/* Navigation Styles */
 .navWrapper {
   display: flex;
   gap: 20px;
-  list-style: none; /* Remove list markers (dots) */
+  list-style: none;
 }
 
 @media (max-width: 599px) {
@@ -94,7 +92,7 @@ body {
 
   .navWrapper.active {
     visibility: visible;
-    margin-top: -15px;
+    margin-top: 15px;
     opacity: 1;
     border-radius: 10px;
     transform: translateY(0);

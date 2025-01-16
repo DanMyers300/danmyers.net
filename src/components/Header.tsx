@@ -39,9 +39,6 @@ const Header: React.FC = () => {
           </button>
           <ul ref={navWrapperRef} className="navWrapper">
             <li className="navItem">
-              <a href="/">Home</a>
-            </li>
-            <li className="navItem">
               <a href="/about">About</a>
             </li>
             <li className="navItem">
