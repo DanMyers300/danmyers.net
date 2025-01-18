@@ -1,0 +1,11 @@
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  object-position: center -50%; /* Move the image down */
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+}

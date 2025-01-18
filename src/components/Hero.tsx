@@ -1,7 +1,9 @@
+import '../styles/Hero.css'
+
 function Hero() {
   return (
     <>
-      <img src="/hero.png" alt="Hero Image" class="hero-image" />
+      <img src="/Hero.png" alt="Hero Image" class="hero-image" />
     </>
   );    
 };
