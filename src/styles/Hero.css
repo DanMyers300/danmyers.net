@@ -4,7 +4,7 @@
   border-radius: 50%;
   border: 5px solid #fff;
   object-fit: cover;
-  object-position: center -50%; /* Move the image down */
+  object-position: center -50%;
   display: block;
   margin: 0 auto;
   background-color: white;
