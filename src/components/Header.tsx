@@ -26,20 +26,14 @@ const Header: React.FC = () => {
   const menuItems = [
     { title: 'about', href: '/about' },
     { title: 'contact', href: '/contact' },
-    { title: 'resume', href: '/Resume.pdf' } // Ensure this path is correct
+    { title: 'resume', href: '/resume' }
   ];
 
   const listMenuItems = menuItems.map((item, index) => (
     <li key={index} className="navItem">
-      {item.title === 'resume' ? (
-        <a href={item.href} target="_blank" rel="noopener noreferrer">
-          {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
-        </a>
-      ) : (
-        <Link to={item.href}>
-          {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
-        </Link>
-      )}
+      <Link to={item.href}>
+        {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
+      </Link>
     </li>
   ));
 
