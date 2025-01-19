@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useRef, useEffect } from 'react';
+import { isMobile } from 'react-device-detect';
+import { handleResumeClick } from './Resume';
 import '../styles/Header.css';
 
 const Header: React.FC = () => {
@@ -23,15 +25,29 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  const handleMenuClick = (title: string, e: React.MouseEvent<HTMLAnchorElement>) => {
+    const menuClickHandlers: { [key: string]: (e: React.MouseEvent<HTMLAnchorElement>) => void } = {
+      resume: handleResumeClick,
+    };
+
+    const handler = menuClickHandlers[title];
+    if (handler) {
+      handler(e);
+    }
+  };
+
   const menuItems = [
     { title: 'about', href: '/about' },
     { title: 'contact', href: '/contact' },
-    { title: 'resume', href: '/resume' }
+    { title: 'resume', href: isMobile ? '#' : '/resume' }
   ];
 
   const listMenuItems = menuItems.map((item, index) => (
     <li key={index} className="navItem">
-      <Link to={item.href}>
+      <Link
+        to={item.href}
+        onClick={(e) => handleMenuClick(item.title, e)}
+      >
         {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
       </Link>
     </li>
