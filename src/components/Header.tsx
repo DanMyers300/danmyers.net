@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useRef, useEffect } from 'react';
 import '../styles/Header.css';
 
@@ -29,18 +30,18 @@ const Header: React.FC = () => {
 
   const listMenuItems = menuItems.map((item, index) => (
     <li key={index} className="navItem">
-      <a href={item.href}>
+      <Link to={item.href}>
         {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
-      </a>
+      </Link>
     </li>
   ));
 
   return (
     <header className="siteHeader">
       <div className="wrapper siteHeaderWrapper">
-        <a href="/" className="brand">
+        <Link to="/" className="brand">
           Dan
-        </a>
+        </Link>
         <nav className="nav">
           <button
             ref={navToggleRef}
