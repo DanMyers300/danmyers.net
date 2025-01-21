@@ -1,4 +1,5 @@
 import '../styles/Contact.css';
+import React from 'react';
 import { MdEmail } from 'react-icons/md';
 
 function Contact() {
@@ -6,7 +7,7 @@ function Contact() {
     window.open('mailto:contact@danmyers.net', '_blank');
   };
 
-  const renderEmailLink = (className, children) => {
+  const renderEmailLink = (className: string, children: React.ReactNode) => {
     return (
       <a
         href="mailto:contact@danmyers.net"
