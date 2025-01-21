@@ -70,3 +70,33 @@
 .contact-form a:hover {
   color: #0077b5;
 }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.email-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.mail-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mail-link:hover {
+  text-decoration: underline;
+}
+
+.mail-icon {
+  font-size: 24px;
+  color: white;
+}
