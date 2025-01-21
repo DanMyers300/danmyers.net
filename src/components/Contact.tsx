@@ -2,17 +2,34 @@ import '../styles/Contact.css';
 import { MdEmail } from 'react-icons/md';
 
 function Contact() {
+  const handleEmailClick = () => {
+    window.open('mailto:contact@danmyers.net', '_blank');
+  };
+
+  const renderEmailLink = (className, children) => {
+    return (
+      <a
+        href="mailto:contact@danmyers.net"
+        className={className}
+        onClick={(e) => {
+          e.preventDefault();
+          handleEmailClick();
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {children}
+      </a>
+    );
+  };
+
   return (
     <main>
       <h1>Contact Me</h1>
-      <br />
+      <hr className="separator-bar" />
       <div className="contact-container">
-        <a href="mailto:contact@danmyers.net" className="email-link" target="_blank" rel="noopener noreferrer">
-          contact@danmyers.net
-        </a>
-        <a href="mailto:contact@danmyers.net" className="mail-link" target="_blank" rel="noopener noreferrer">
-          <MdEmail className="mail-icon" />
-        </a>
+        {renderEmailLink('mail-link', <MdEmail className="mail-icon" />)}
+        {renderEmailLink('email-link', 'contact@danmyers.net')}
       </div>
     </main>
   );
