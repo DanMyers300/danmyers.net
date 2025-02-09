@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import hero from '../../public/Hero.png';
 import '../styles/Hero.css';
 
 function Hero() {
@@ -20,7 +21,7 @@ function Hero() {
   return (
     <>
       {!isSmallHeight && (
-        <img src="/Hero.png" alt="Hero Image" className="hero-image" />
+        <img src={hero} alt="Hero Image" className="hero-image" />
       )}
     </>
   );
