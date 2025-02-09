@@ -9,6 +9,7 @@
   "devDependencies": {
     "@types/bun": "^1.2.2",
     "@types/react": "^19.0.8",
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "bun-plugin-tailwind": "^0.0.14"
   }
 }
