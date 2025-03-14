@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   const menuItems = [
     //{ title: 'about', href: '/about' },
     { title: 'contact', href: '/contact' },
-    { title: 'resume', href: isMobile ? '#' : '/resume' } // Changed href for mobile
+    { title: 'resume', href: isMobile ? '#' : '/resume' }
   ];
 
   const listMenuItems = menuItems.map((item, index) => (

@@ -4,7 +4,7 @@ import Home from './components/Home.tsx';
 //import About from './components/About.tsx';
 import Contact from './components/Contact.tsx';
 import Resume from './components/Resume.tsx';
-import './styles/App.css';
+import './App.css';
 
 function App() {
   return (
