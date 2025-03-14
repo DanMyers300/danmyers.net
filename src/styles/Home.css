@@ -1,0 +1,44 @@
+.hero-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-blurb {
+  font-size: 18px;
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+.separator-bar {
+  width: 80%;
+  height: 2px;
+  background-color: #b4bbc2;
+  margin: 20px 0;
+}
+
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0077b5;
+}
+
+.social-links a:hover .social-icon:nth-child(2) {
+  color: #333;
+}
+
+.social-icon {
+  font-size: 2em;
+}
