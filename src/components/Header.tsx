@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useRef, useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
-import { handleResumeClick } from './Resume';
 import '../styles/Header.css';
+import resume from '/src/assets/Resume.pdf';
 
 const Header: React.FC = () => {
   const navToggleRef = useRef<HTMLButtonElement | null>(null);
@@ -26,20 +26,16 @@ const Header: React.FC = () => {
   }, []);
 
   const handleMenuClick = (title: string, e: React.MouseEvent<HTMLAnchorElement>) => {
-    const menuClickHandlers: { [key: string]: (e: React.MouseEvent<HTMLAnchorElement>) => void } = {
-      resume: handleResumeClick,
-    };
-
-    const handler = menuClickHandlers[title];
-    if (handler) {
-      handler(e);
+    if (title === 'resume' && isMobile) {
+      e.preventDefault();
+      window.open(resume, '_blank', 'noopener,noreferrer');
     }
   };
 
   const menuItems = [
     //{ title: 'about', href: '/about' },
     { title: 'contact', href: '/contact' },
-    { title: 'resume', href: isMobile ? '#' : '/resume' }
+    { title: 'resume', href: isMobile ? '#' : '/resume' } // Changed href for mobile
   ];
 
   const listMenuItems = menuItems.map((item, index) => (
@@ -78,3 +74,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+

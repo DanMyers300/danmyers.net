@@ -1,21 +1,21 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
 import resume from '/src/assets/Resume.pdf';
-
-export const handleResumeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-  if (isMobile) {
-    e.preventDefault();
-    window.open(resume, '_blank');
-  }
-};
 
 const Resume: React.FC = () => {
   return (
-    <div className="p-5">
+    <div style={{ 
+      height: 'calc(100vh - 70px)',
+      width: '100%',
+      overflow: 'hidden'
+    }}>
       <iframe
         src={resume}
-        className="w-full h-[1000px]"
         title="Resume"
+        style={{
+          width: '100%',
+          height: '100%',
+          border: 'none'
+        }}
       />
     </div>
   );
