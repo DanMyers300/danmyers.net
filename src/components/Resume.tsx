@@ -1,6 +1,6 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
-import resume from '/Resume.pdf';
+import resume from '/src/assets/Resume.pdf';
 import '../styles/Resume.css';
 
 export const handleResumeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
