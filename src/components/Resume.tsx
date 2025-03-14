@@ -1,7 +1,6 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
 import resume from '/src/assets/Resume.pdf';
-import '../styles/Resume.css';
 
 export const handleResumeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
   if (isMobile) {
@@ -12,11 +11,10 @@ export const handleResumeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 
 const Resume: React.FC = () => {
   return (
-    <div className="resume-container">
+    <div className="p-5">
       <iframe
         src={resume}
-        width="100%"
-        height="1000px"
+        className="w-full h-[1000px]"
         title="Resume"
       />
     </div>
