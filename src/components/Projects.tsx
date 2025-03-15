@@ -2,14 +2,14 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      image: "/src/assets/life.png",
+      image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/life.png?raw=true",
       title: "Conway's Game of Life",
       description: "Conway's Game of Life in Rust running in WebAssembly",
       link: "https://github.com/DanMyers300/life.danmyers.net"
     },
     {
       id: 2,
-      image: "/src/assets/rain.png",
+      image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/rain.png?raw=true",
       title: "Rain Mixer",
       description: "Audio mixer website and desktop app for relaxing sounds",
       link: "https://github.com/DanMyers300/rain-mixer"
