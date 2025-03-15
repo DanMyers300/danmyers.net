@@ -5,51 +5,61 @@ function Projects() {
       image: "/src/assets/life.png",
       title: "Conway's Game of Life",
       description: "Conway's Game of Life in Rust running in WebAssembly",
+      link: "https://github.com/username/conways-game-of-life"
     },
     {
       id: 2,
       image: "/path-to-image-2.jpg",
       title: "Rain Mixer",
       description: "Audio mixer website and desktop app for relaxing sounds",
+      link: "https://github.com/username/rain-mixer"
     },
     {
       id: 3,
       image: "/path-to-image-3.jpg",
       title: "Project 3",
       description: "Description for project 3",
+      link: "https://github.com/username/project-3"
     },
     {
       id: 4,
       image: "/path-to-image-4.jpg",
       title: "Project 4",
       description: "Description for project 4",
+      link: "https://github.com/username/project-4"
     },
   ];
 
-  /*
-  * - TOO WIDE, GIVE HALF SPACE TO EACH CARD AND MAKE TILES.
-  * - Experiment with putting text bar on bottom.
-  * - On hover should get slightly larger and animates a zoom on image.
-  * - On click should take you to github
-  */
   return (
-    <div className="flex flex-col gap-7 mt-7">
+    <div className="grid grid-cols-2 gap-6 mt-7 w-full">
       {projects.map((project) => (
-        <div key={project.id}>
-          <div className="bg-[#152736] rounded-lg overflow-hidden shadow-lg">
-            <div className="p-4">
-              <h3 className="text-xl font-bold text-gray-300">
+        <a
+          key={project.id}
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block"
+        >
+          <div
+            className="bg-[#152736] rounded-lg overflow-hidden
+                       shadow-lg h-full transition-transform
+                       duration-300 hover:scale-[1.02]"
+          >
+            <div className="relative overflow-hidden">
+              <img
+                src={project.image}
+                className="w-full h-64 object-cover transition-transform duration-500 hover:scale-110"
+                alt={project.title}
+              />
+            </div>
+            <div className="p-4 text-center">
+              <h3 className="text-xl font-bold text-gray-300 mb-2">
                 {project.title}
               </h3>
               <p className="text-gray-300">{project.description}</p>
             </div>
-            <img 
-              src={project.image}
-              className="w-full h-96 object-cover"
-              alt={project.title}
-            />
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );
