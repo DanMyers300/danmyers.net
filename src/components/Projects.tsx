@@ -2,7 +2,7 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      image: "/path-to-image-1.jpg",
+      image: "/src/assets/life.png",
       title: "Conway's Game of Life",
       description: "Conway's Game of Life in Rust running in WebAssembly",
     },
@@ -26,8 +26,14 @@ function Projects() {
     },
   ];
 
+  /*
+  * - TOO WIDE, GIVE HALF SPACE TO EACH CARD AND MAKE TILES.
+  * - Experiment with putting text bar on bottom.
+  * - On hover should get slightly larger and animates a zoom on image.
+  * - On click should take you to github
+  */
   return (
-    <div className="flex flex-col gap-6 mt-5">
+    <div className="flex flex-col gap-7 mt-7">
       {projects.map((project) => (
         <div key={project.id}>
           <div className="bg-[#152736] rounded-lg overflow-hidden shadow-lg">
@@ -35,9 +41,13 @@ function Projects() {
               <h3 className="text-xl font-bold text-gray-300">
                 {project.title}
               </h3>
-              <p className="text-gray-300 mb-4">{project.description}</p>
+              <p className="text-gray-300">{project.description}</p>
             </div>
-            <img src={project.image} className="w-full" alt={project.title} />
+            <img 
+              src={project.image}
+              className="w-full h-96 object-cover"
+              alt={project.title}
+            />
           </div>
         </div>
       ))}
