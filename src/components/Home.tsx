@@ -11,7 +11,7 @@ function Home() {
         <p className="title-blurb">Software Engineer</p>
         <hr className="separator-bar" />
         
-        <div className="social-links">
+        <div className="social-links flex justify-center space-x-6 mt-4">
           <a href="https://www.linkedin.com/in/danpmyers/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" />
           </a>
