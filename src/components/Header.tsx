@@ -33,7 +33,7 @@ const Header: React.FC = () => {
   };
 
   const menuItems = [
-    //{ title: 'about', href: '/about' },
+    { title: 'projects', href: '/projects' },
     { title: 'contact', href: '/contact' },
     { title: 'resume', href: isMobile ? '#' : '/resume' }
   ];
