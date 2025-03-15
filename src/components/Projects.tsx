@@ -27,7 +27,7 @@ function Projects() {
   ];
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 mt-5">
       {projects.map((project) => (
         <div key={project.id}>
           <div className="bg-[#152736] rounded-lg overflow-hidden shadow-lg">
