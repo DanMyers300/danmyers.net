@@ -5,14 +5,14 @@ function Projects() {
       image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/life.png?raw=true",
       title: "Conway's Game of Life",
       description: "Conway's Game of Life in Rust running in WebAssembly",
-      link: "https://github.com/DanMyers300/life.danmyers.net"
+      link: "https://life.danmyers.net"
     },
     {
       id: 2,
       image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/rain.png?raw=true",
       title: "Rain Mixer",
       description: "Audio mixer website and desktop app for relaxing sounds",
-      link: "https://github.com/DanMyers300/rain-mixer"
+      link: "https://rain.danmyers.net"
     },
   ];
 
