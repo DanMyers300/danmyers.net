@@ -3,14 +3,14 @@ function Projects() {
     {
       id: 1,
       image: "/path-to-image-1.jpg",
-      title: "Project 1",
-      description: "Description for project 1",
+      title: "Conway's Game of Life",
+      description: "Conway's Game of Life in Rust running in WebAssembly",
     },
     {
       id: 2,
       image: "/path-to-image-2.jpg",
-      title: "Project 2",
-      description: "Description for project 2",
+      title: "Rain Mixer",
+      description: "Audio mixer website and desktop app for relaxing sounds",
     },
     {
       id: 3,
@@ -27,15 +27,17 @@ function Projects() {
   ];
 
   return (
-    <div className="flex flex-col gap-6 pt-6">
+    <div className="flex flex-col gap-6">
       {projects.map((project) => (
         <div key={project.id}>
-          <div className="bg-[#152736] rounded-lg overflow-hidden">
-            <div className="text-center text-gray-300">{project.title}</div>
-            <img
-              src={project.image}
-              className="w-full h-64 object-cover"
-            />
+          <div className="bg-[#152736] rounded-lg overflow-hidden shadow-lg">
+            <div className="p-4">
+              <h3 className="text-xl font-bold text-gray-300">
+                {project.title}
+              </h3>
+              <p className="text-gray-300 mb-4">{project.description}</p>
+            </div>
+            <img src={project.image} className="w-full" alt={project.title} />
           </div>
         </div>
       ))}
