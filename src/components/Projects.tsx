@@ -5,33 +5,19 @@ function Projects() {
       image: "/src/assets/life.png",
       title: "Conway's Game of Life",
       description: "Conway's Game of Life in Rust running in WebAssembly",
-      link: "https://github.com/username/conways-game-of-life"
+      link: "https://github.com/DanMyers300/life.danmyers.net"
     },
     {
       id: 2,
-      image: "/path-to-image-2.jpg",
+      image: "/src/assets/rain.png",
       title: "Rain Mixer",
       description: "Audio mixer website and desktop app for relaxing sounds",
-      link: "https://github.com/username/rain-mixer"
-    },
-    {
-      id: 3,
-      image: "/path-to-image-3.jpg",
-      title: "Project 3",
-      description: "Description for project 3",
-      link: "https://github.com/username/project-3"
-    },
-    {
-      id: 4,
-      image: "/path-to-image-4.jpg",
-      title: "Project 4",
-      description: "Description for project 4",
-      link: "https://github.com/username/project-4"
+      link: "https://github.com/DanMyers300/rain-mixer"
     },
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-6 mt-7 w-full">
+    <div className="grid md:grid-cols-2 gap-6 mt-7 w-full">
       {projects.map((project) => (
         <a
           key={project.id}
