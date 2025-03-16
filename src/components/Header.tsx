@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useRef, useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
-import '../styles/Header.css';
+import '../Header.css';
 import resume from '/src/assets/Resume.pdf';
 
 const Header: React.FC = () => {
