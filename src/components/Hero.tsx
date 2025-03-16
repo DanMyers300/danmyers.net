@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import hero from '/Hero.png';
+import hero from '/hero.png';
 
 function Hero() {
   const [isSmallHeight, setIsSmallHeight] = useState(false);

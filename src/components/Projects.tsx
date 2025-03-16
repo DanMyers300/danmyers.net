@@ -1,15 +1,18 @@
+import life from '/life.webp';
+import rain from '/rain.webp';
+
 function Projects() {
   const projects = [
     {
       id: 1,
-      image: "https://github.com/DanMyers300/danmyers.net/blob/main/public/life.webp?raw=true",
+      image: life,
       title: "Conway's Game of Life",
       description: "Conway's Game of Life in Rust running in WebAssembly",
       link: "https://life.danmyers.net"
     },
     {
       id: 2,
-      image: "https://github.com/DanMyers300/danmyers.net/blob/main/public/rain.webp?raw=true",
+      image: rain,
       title: "Rain Mixer",
       description: "Audio mixer website and desktop app for relaxing sounds",
       link: "https://rain.danmyers.net"

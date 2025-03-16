@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { isMobile } from "react-device-detect";
-import resume from "/src/assets/Resume.pdf";
+import resume from "/resume.png";
 
 const Header: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
