@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       <Link
         to={item.href}
         onClick={(e) => handleMenuClick(item.title, e)}
-        className="block py-3 mt-5 sm:py-2 px-4 text-gray-300 no-underline hover:text-white"
+        className="block py-3 sm:py-2 px-4 text-gray-300 no-underline hover:text-white"
       >
         {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
       </Link>
