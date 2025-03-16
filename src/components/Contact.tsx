@@ -1,4 +1,3 @@
-import '../styles/Contact.css';
 import React from 'react';
 import { MdEmail } from 'react-icons/md';
 
@@ -11,7 +10,7 @@ function Contact() {
     return (
       <a
         href="mailto:contact@danmyers.net"
-        className={className}
+        className={`text-current no-underline hover:underline ${className}`}
         onClick={(e) => {
           e.preventDefault();
           handleEmailClick();
@@ -27,10 +26,10 @@ function Contact() {
   return (
     <main>
       <h1>Contact Me</h1>
-      <hr className="separator-bar" />
-      <div className="contact-container">
-        {renderEmailLink('mail-link', <MdEmail className="mail-icon" />)}
-        {renderEmailLink('email-link', 'contact@danmyers.net')}
+      <hr className="w-4/5 h-1 bg-gray-300 my-5" />
+      <div className="flex flex-col items-center gap-2">
+        {renderEmailLink('text-xl text-white', <MdEmail />)}
+        {renderEmailLink('text-lg', 'contact@danmyers.net')}
       </div>
     </main>
   );
