@@ -9,7 +9,7 @@ function Projects() {
     },
     {
       id: 2,
-      image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/rain.png?raw=true",
+      image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/rain.webp?raw=true",
       title: "Rain Mixer",
       description: "Audio mixer website and desktop app for relaxing sounds",
       link: "https://rain.danmyers.net"
