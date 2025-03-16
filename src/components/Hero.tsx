@@ -31,8 +31,7 @@ function Hero() {
             objectFit: 'cover',
             objectPosition: 'center -50%',
             display: 'block',
-            margin: '0 auto',
-            backgroundColor: 'white'
+            backgroundColor: 'white',
           }}
         />
       )}
