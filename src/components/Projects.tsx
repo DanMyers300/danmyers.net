@@ -2,7 +2,7 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/life.png?raw=true",
+      image: "https://github.com/DanMyers300/danmyers.net/blob/main/src/assets/life.webp?raw=true",
       title: "Conway's Game of Life",
       description: "Conway's Game of Life in Rust running in WebAssembly",
       link: "https://life.danmyers.net"
