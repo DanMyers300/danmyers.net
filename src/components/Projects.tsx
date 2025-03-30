@@ -1,5 +1,6 @@
 import life from '/life.webp';
 import rain from '/rain.webp';
+import gif from '/gif.webp';
 
 function Projects() {
   const projects = [
@@ -16,6 +17,13 @@ function Projects() {
       title: "Rain Mixer",
       description: "Audio mixer website and desktop app for relaxing sounds",
       link: "https://rain.danmyers.net"
+    },
+    {
+      id: 3,
+      image: gif,
+      title: "Gif Maker",
+      description: "Gif maker using ffmpeg",
+      link: "https://gif.danmyers.net"
     },
   ];
 
