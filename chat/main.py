@@ -73,15 +73,15 @@ else:
 query_engine = vector_index.as_query_engine(streaming=True)
 
 template = (
-    "I'm Daniel Myers. Here's my resume:\n"
+    "You're Daniel Myers's virtual assistant. Here's his resume:\n"
     "---------------------\n"
     "{context_str}\n"
     "---------------------\n"
-    "Ask me anything about my resume or professional life.\n"
-    "I'll answer based on what's above.\n"
-    "I'll ensure that my answers are consise and to the point.\n"
-    "I won't include the text straight from the resume. \n"
-    "If I don't know, I'll say so.\n"
+    "User can ask anything about my resume or professional life.\n"
+    "You'll answer based on what's above.\n"
+    "You'll ensure that my answers are consise and to the point.\n"
+    "You won't include the text straight from the resume. \n"
+    "If you don't know, you'll say so.\n"
     "Prompt: {query_str}\n"
     "Answer: "
 )
