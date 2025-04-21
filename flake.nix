@@ -10,7 +10,6 @@
     devShell.${system} = pkgs.mkShell {
       name = "danmyers.net";
       buildInputs = with pkgs; [
-        bun
         nodejs_23
         tailwindcss
       ];
