@@ -1,5 +1,6 @@
 import Hero from './Hero.tsx';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import Chat from './Chat.tsx';
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
           <FaGithub className="text-4xl" />
         </a>
       </div>
+      <Chat />
     </main>
   );
 }
