@@ -34,7 +34,7 @@
       ];
     in {
       devShells = forAllSystems ({ pkgs, system }: {
-        default = pkgs.mkShell {
+        run = pkgs.mkShell {
           name = "danmyers.net";
           buildInputs = buildInputsFor pkgs;
           LD_LIBRARY_PATH = pkgs.lib.optionalString pkgs.stdenv.isLinux
@@ -45,6 +45,18 @@
             mkdir -p "$TIKTOKEN_CACHE_DIR"
             python3 -m nltk.downloader punkt_tab
             ./start_stream.sh
+          '';
+        };
+        default = pkgs.mkShell {
+          name = "danmyers.net";
+          buildInputs = buildInputsFor pkgs;
+          LD_LIBRARY_PATH = pkgs.lib.optionalString pkgs.stdenv.isLinux
+            (pkgs.lib.makeLibraryPath [ pkgs.zstd ]);
+          shellHook = ''
+            export NLTK_DATA="$PWD/nltk_data"
+            export TIKTOKEN_CACHE_DIR="$PWD/tiktoken_cache"
+            mkdir -p "$TIKTOKEN_CACHE_DIR"
+            python3 -m nltk.downloader punkt_tab
           '';
         };
       });
