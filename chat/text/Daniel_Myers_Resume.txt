@@ -1,0 +1,44 @@
+﻿Daniel Myers
+Dallas, TX 75081  •  Daniel.Myers.VAE9R7@statefarm.com
+
+A versatile developer skilled in Python and Javascript, adept at full-stack development and containerization.
+Proven track record of leading successful projects, from custom AWS chatbots to NLP applications. Strong
+Communicator and mentor consistently exceeds expectations.
+
+Skills
+● Programming: Python, JavaScript/TypeScript, SQL, Flask, Node.JS, React.
+● Development: Github, Gitlab, AWS Code Deploy, CI/CD, Linux, Docker.
+● AWS: EC2, S3, Lambda, DynamoDB, API Gateway, Lex.
+● Non-technical: Time management, problem solving, teachability, Agile methodology.
+
+Relevant Experience
+STATE FARM                                                                                                                           June 2023 - Present
+Claims Adjuster                                                                                                                                                         
+● Investigates, evaluates, and settles high volume auto claims quickly while ensuring quality.
+● Team resource; point of contact for subrogation and estimatics questions arising from team members.
+● Hosts job shadows, leads discussions in meetings, and mentors new-to-role claims adjusters.
+● Handles escalation calls and tasks on management's behalf, including ownership of claim tasks.
+● Consistently exceeding expectations, received 4-rating and promoted to S3 level after 6 months of role.
+
+MUSEWORK                                                                                                              July 2022 - December 2023
+Front-End/AWS Developer
+● Consulted management to plan a custom AWS chatbot for a client: Waterloo-Greenway Conservancy.
+● Lead solo development of client chatbot which utilizes Lex v2, lambda, SNS, Pinpoint, and Cloudwatch.
+● Automated testing of chatbot with local JS functions. Handled thousands of texts for a year without fail.
+● Collaborated with the design team to build ReactJS components for a TXDOT educational website. 
+● Pair-programmed with a senior developer to create the final layout and integrate components.
+
+FORT WORTH GASKET                                                                                          April 2023 - February 2024
+Full-Stack Developer
+● Lead the design and development of a containerized, full-stack, natural language processing application.
+● Vectorized employer data using ChromaDB for use in resource augmented generation.
+● Trained custom named entity recognition language models capable of 97% accuracy.
+● Created an HTML/JS front end for the chatbot utilizing back-end API written in Python with Flask.
+● Separated each service into its own docker container. Orchestrated containers with Docker Compose.
+● Consulted management on hardware choice for natural language processing solution.
+● Deployed containerized application on virtualized linux environment to employer hardware.
+
+Hobbies
+● Tinkering with electronics, both software and hardware.
+● Swimming and teaching swimming.
+● Bird watching and identification.
