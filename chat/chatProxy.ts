@@ -8,12 +8,14 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "*", // or your prod URL                                                                                      credentials: true,
+    origin: "*",
     methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],                                                                                   })                                                                                                                  );
+    allowedHeaders: ["Content-Type"],
+  }));
 
 app.options("/query", (req, res) => {
-  res.set("Access-Control-Allow-Origin", "https://danmyers.net");                                                       res.set("Access-Control-Allow-Credentials", "true");
+  res.set("Access-Control-Allow-Origin", "https://danmyers.net");
+  res.set("Access-Control-Allow-Credentials", "true");
   res.set("Access-Control-Allow-Headers", "Content-Type");
   res.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
   res.sendStatus(204);
