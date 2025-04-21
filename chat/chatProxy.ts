@@ -1,29 +1,55 @@
 import express from "express";
 import cors from "cors";
-
+import fs from "fs";
+import https from "https";
 const app = express();
 
-app.use(cors());
 app.use(express.json());
 
-app.post("/query", async (req, res) => {
-  const response = await fetch("http://192.168.1.16:8000/query", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(req.body),
-  });
+app.use(
+  cors({
+    origin: "*", // or your prod URL                                                                                      credentials: true,
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],                                                                                   })                                                                                                                  );
 
-  res.set(
-    "Content-Type",
-    response.headers.get("content-type") || "application/json"
-  );
-
-  // Buffer the response and send it
-  const data = await response.arrayBuffer();
-  res.send(Buffer.from(data));
+app.options("/query", (req, res) => {
+  res.set("Access-Control-Allow-Origin", "https://danmyers.net");                                                       res.set("Access-Control-Allow-Credentials", "true");
+  res.set("Access-Control-Allow-Headers", "Content-Type");
+  res.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.sendStatus(204);
 });
 
-app.listen(3001, "0.0.0.0", () =>
-  console.log("Proxy running on http://0.0.0.0:3001")
-);
+app.post("/query", async (req, res) => {
+  try {
+    const response = await fetch("http://IP HERE:8000/query", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(req.body),
+    });
 
+    res.set("Access-Control-Allow-Origin", "https://danmyers.net");
+    res.set("Access-Control-Allow-Credentials", "true");
+    res.set("Access-Control-Allow-Headers", "Content-Type");
+    res.set("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+
+    res.set(
+      "Content-Type",
+      response.headers.get("content-type") || "application/json"
+    );
+
+    const data = await response.arrayBuffer();
+    res.send(Buffer.from(data));
+  } catch (err) {
+    console.error("Proxy error:", err);
+    res.status(502).json({ error: "Proxy failed", details: err.message });
+  }
+});
+
+const options = {
+  key: fs.readFileSync("/etc/letsencrypt/live/api.danmyers.net/privkey.pem"),
+  cert: fs.readFileSync("/etc/letsencrypt/live/api.danmyers.net/fullchain.pem"),
+};
+
+https.createServer(options, app).listen(3001, "0.0.0.0", () => {
+  console.log("HTTPS Proxy running on https://0.0.0.0:3001");
+});
