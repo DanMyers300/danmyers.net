@@ -1,6 +1,7 @@
 import life from '/life.webp';
 import rain from '/rain.webp';
 import gif from '/gif.webp';
+import tiktactoe from '/tiktactoe.webp';
 
 function Projects() {
   const projects = [
@@ -24,6 +25,13 @@ function Projects() {
       title: "Gif Maker",
       description: "Gif maker using ffmpeg",
       link: "https://gif.danmyers.net"
+    },
+    {
+      id: 4,
+      image: tiktactoe,
+      title: "TikTacToe",
+      description: "Simple TikTacToe game",
+      link: "https://tiktactoe.danmyers.net"
     },
   ];
 
