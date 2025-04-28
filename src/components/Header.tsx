@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     title: string,
     e: React.MouseEvent<HTMLAnchorElement>
   ) => {
-    if (title === "resume" && isMobile) {
+    if (title === "resume") {
       e.preventDefault();
       window.open(resume, "_blank", "noopener,noreferrer");
     }
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   const menuItems = [
     { title: "projects", href: "/projects" },
     { title: "contact", href: "/contact" },
-    { title: "resume", href: isMobile ? "#" : "/resume" }
+    { title: "resume", href: "#"}
   ];
 
   const listMenuItems = menuItems.map((item, index) => (
