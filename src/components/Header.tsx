@@ -1,32 +1,20 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { isMobile } from "react-device-detect";
-import resume from "/resume.png";
 
 const Header: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const handleMenuClick = (
-    title: string,
-    e: React.MouseEvent<HTMLAnchorElement>
-  ) => {
-    if (title === "resume") {
-      e.preventDefault();
-      window.open(resume, "_blank", "noopener,noreferrer");
-    }
-  };
-
   const menuItems = [
     { title: "projects", href: "/projects" },
     { title: "contact", href: "/contact" },
-    { title: "resume", href: "#"}
+    { title: "resume", href: "/resume"}
   ];
 
   const listMenuItems = menuItems.map((item, index) => (
     <li key={index} className="sm:inline-block">
       <Link
         to={item.href}
-        onClick={(e) => handleMenuClick(item.title, e)}
         className={`block ${isMobile ? "py-5" : ""} px-4 text-gray-300 no-underline hover:text-white`}
       >
         {item.title.charAt(0).toUpperCase() + item.title.slice(1)}
