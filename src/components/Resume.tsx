@@ -58,7 +58,7 @@ const Resume: React.FC = () => {
         <section className="w-full mt-5 text-white">
           <div className="flex justify-between">
             <h2 className="font-bold">Fort Worth Gasket</h2>
-            <p>April 2023 - February 2024</p>
+            <p>April 2023 - Feb 2024</p>
           </div>
           <p className="text-start italic">Contract Full-Stack Engineer (Remote)</p>
           <ul className="list-disc list-inside mt-5 pl-5">
@@ -97,7 +97,7 @@ const Resume: React.FC = () => {
         <section className="w-full mt-5 text-white">
           <div className="flex justify-between">
             <h2 className="font-bold">MuseWork</h2>
-            <p>Feb 2024 - Present</p>
+            <p>July 2022 - December 2023</p>
           </div>
           <p className="text-start italic">Contract Full-Stack Engineer (Remote)</p>
           <ul className="list-disc list-inside mt-5 pl-5">
