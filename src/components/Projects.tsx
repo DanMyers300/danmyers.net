@@ -36,6 +36,8 @@ function Projects() {
   ];
 
   return (
+    <>
+    <div className="text-4xl sm:text-5xl font-extrabold text-white mt-16"> Projects </div>
     <div className="grid md:grid-cols-2 gap-6 mt-7 w-full">
       {projects.map((project) => (
         <a
@@ -67,6 +69,7 @@ function Projects() {
         </a>
       ))}
     </div>
+    </>
   );
 }
 

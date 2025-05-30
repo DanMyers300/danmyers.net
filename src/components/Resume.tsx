@@ -1,12 +1,11 @@
 import React from 'react';
 import Hero from './Hero.tsx';
-import { FaCode, FaTools, FaUserTie } from 'react-icons/fa';
+import { FaCode, FaTools } from 'react-icons/fa';
 
 const Resume: React.FC = () => {
   return (
-    <div className="flex flex-col items-center bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100 min-h-screen px-4 sm:px-6 py-8">
+    <div className="flex flex-col items-center text-gray-100 min-h-screen px-4 sm:px-6 ">
       {/* Hero Section */}
-      <Hero />
 
       {/* Download Resume Button */}
       <a

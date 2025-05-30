@@ -7,9 +7,8 @@ function Contact() {
 
   return (
     <main>
-      <h1>Contact Me</h1>
-      <hr className="w-4/5 h-1 bg-gray-300 my-5" />
-      <div className="flex flex-col items-center gap-2">
+      <h1 className="text-white">Contact Me</h1>
+      <div className="flex flex-col mt-5 items-center gap-2">
         <a
           href="mailto:contact@danmyers.net"
           className="no-underline hover:underline text-xl"
