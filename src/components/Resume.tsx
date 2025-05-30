@@ -4,8 +4,6 @@ import { FaCode, FaTools } from 'react-icons/fa';
 const Resume: React.FC = () => {
   return (
     <div className="flex flex-col items-center text-gray-100 min-h-screen px-4 sm:px-6 ">
-      {/* Hero Section */}
-
       {/* Download Resume Button */}
       <a
         href="/resume.pdf"
@@ -45,7 +43,7 @@ const Resume: React.FC = () => {
           </p>
           <p>
             <span className="font-bold text-purple-300">Personal:</span>{' '}
-            Problem-Solving | Adaptability | Collaboration | Communication | Leadership | Creativity
+            Problem-Solving | Adaptability | Collaboration | Communication | Leadership
           </p>
         </div>
       </section>
