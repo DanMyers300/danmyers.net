@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero from './Hero.tsx';
 import { FaCode, FaTools } from 'react-icons/fa';
 
 const Resume: React.FC = () => {
