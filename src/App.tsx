@@ -1,12 +1,14 @@
 import Hero from './components/Hero';
 import Stars from './components/Stars';
+import Contact from './components/Contact'
+import Projects from './components/Projects';
+
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function App() {
   return (
     <>
-      <main className="bg-black absolute w-screen h-screen">
-
+      <main className="bg-black absolute w-screen min-h-screen">
         {/* Stars Container */}
         <div className="absolute inset-0 z-0">
           <Stars />
@@ -14,7 +16,6 @@ function App() {
 
         {/* Content Container */}
         <div className="relative z-10">
-
           {/* Hero Container */}
           <div className="relative flex flex-col items-center justify-center pt-20">
             <Hero />
@@ -45,6 +46,9 @@ function App() {
           </div>
 
           <div className="w-4/5 h-1 bg-gray-200 mb-0 my-8 mx-auto relative z-10"></div>
+          <Projects />
+          <div className="w-4/5 h-1 bg-gray-200 mb-0 my-8 mx-auto relative z-10"></div>
+          <Contact />
         </div>
       </main>
     </>
