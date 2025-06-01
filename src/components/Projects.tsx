@@ -29,6 +29,7 @@ function Projects() {
     {
       id: 4,
       image: tiktactoe,
+      title: "TikTacToe",
       description: "Simple TikTacToe game",
       link: "https://tiktactoe.danmyers.net"
     },
@@ -38,8 +39,7 @@ function Projects() {
     <>
       <div className="flex flex-col">
         <div className="text-4xl sm:text-5xl font-extrabold text-white mx-auto mb-8 mt-16">
-          {" "}
-          Projects{" "}
+          Projects
         </div>
         {/* Removed w-full and made max-w-screen-lg and mx-auto apply always */}
         <div className="grid md:grid-cols-2 gap-6 mt-7 max-w-screen-lg mx-auto p-4">
@@ -52,7 +52,7 @@ function Projects() {
               className="block"
             >
               <div
-                className="bg-[#152736] rounded-lg overflow-hidden
+                className="bg-gray-800 rounded-lg overflow-hidden
                          shadow-lg h-full transition-transform
                          duration-300 hover:scale-[1.02]"
               >
