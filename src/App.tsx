@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Stars from './components/Stars';
 import Contact from './components/Contact'
+import Resume from './components/Resume';
 import Projects from './components/Projects';
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
@@ -47,6 +48,8 @@ function App() {
 
           <div className="w-4/5 h-1 bg-gray-200 mb-0 my-8 mx-auto relative z-10"></div>
           <Projects />
+          <div className="w-4/5 h-1 bg-gray-200 mb-0 my-8 mx-auto relative z-10"></div>
+          <Resume />
           <div className="w-4/5 h-1 bg-gray-200 mb-0 my-8 mx-auto relative z-10"></div>
           <Contact />
         </div>
