@@ -37,6 +37,11 @@
       #content {
         position: relative;
         z-index: 10;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
       /* Hero section */
@@ -45,7 +50,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 5rem;
       }
 
       #hero-img {
@@ -244,7 +248,7 @@
 
       <!-- Hero -->
       <div id="hero">
-        <img id="hero-img" src="/hero.png" alt="Dan Myers" />
+        <img id="hero-img" src="/hero.webp" alt="Dan Myers" />
         <p id="hero-name">Dan Myers</p>
         <p id="hero-title">Software Engineer</p>
       </div>
@@ -264,71 +268,6 @@
           </svg>
         </a>
       </div>
-
-      <div class="divider"></div>
-
-      <!-- Projects -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <div id="projects-grid">
-
-          <a class="project-card" href="https://life.danmyers.net" target="_blank" rel="noopener noreferrer">
-            <div class="project-card-img-wrap">
-              <img src="/life.webp" alt="Conway's Game of Life" />
-            </div>
-            <div class="project-card-body">
-              <h3>Conway's Game of Life</h3>
-              <p>Conway's Game of Life in Rust running in WebAssembly</p>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://rain.danmyers.net" target="_blank" rel="noopener noreferrer">
-            <div class="project-card-img-wrap">
-              <img src="/rain.webp" alt="Rain Mixer" />
-            </div>
-            <div class="project-card-body">
-              <h3>Rain Mixer</h3>
-              <p>Audio mixer website and desktop app for relaxing sounds</p>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://gif.danmyers.net" target="_blank" rel="noopener noreferrer">
-            <div class="project-card-img-wrap">
-              <img src="/gif.webp" alt="Gif Maker" />
-            </div>
-            <div class="project-card-body">
-              <h3>Gif Maker</h3>
-              <p>Gif maker using ffmpeg</p>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://tiktactoe.danmyers.net" target="_blank" rel="noopener noreferrer">
-            <div class="project-card-img-wrap">
-              <img src="/tiktactoe.webp" alt="TikTacToe" />
-            </div>
-            <div class="project-card-body">
-              <h3>TikTacToe</h3>
-              <p>Simple TikTacToe game</p>
-            </div>
-          </a>
-
-        </div>
-      </section>
-
-      <div class="divider"></div>
-
-      <!-- Contact -->
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <a href="mailto:contact@danmyers.net" aria-label="Email">
-          <!-- Email icon -->
-          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-          </svg>
-        </a>
-        <a href="mailto:contact@danmyers.net">contact@danmyers.net</a>
-      </section>
-
     </div>
 
     <script>
